@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SelfieCam PhotoBooth</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SelfieCam PhotoBooth</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!-- HEADER -->
     <header>
         <div>
             <!-- LOGO -->
-            <img src="../assets/img/logo.png">
+            <a href="#"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo" class="logo"></a>
+        </div>    
             <!-- BARRA DE NAVEGACION -->
-            <nav>                
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="packages.html">Paquetes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>                
+        <nav>                
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="packages.html">Paquetes</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>                
+    </header>            
     <main>
-        <section>
-            <h2>SERVICIOS</h2>
+        <div>    
+            <h1>SERVICIOS</h1>
             <p>SelfieCam PhotoBooth utiliza en todos sus servicios camara profesional Canon para la captura de las imagenes. Las innumerables configuraciones que te permiten hacer estos equipos te garantizan fotos de alta calidad. Sumado a esto tambien utilizamos flash de estudio para la correcta iluminacion, lo cual nos binda nitidez en las imágenes capturadas. En resumen, montamos un pequeño estudio de fotografía en tu fiesta</p>
-            <div>
-                <article>
-                    <h4>ESPEJO MÁGICO</h4>
-                    <img src="../assets/img/espejo1.jpg">
-                    <div>
-                        <a href="contact.html">Solicitar presupuesto</a>
-                    </div>
-                </article>
-                <article>
-                    <h4>TOTEM FOTOGRÁFICO</h4>
-                    <img src="../assets/img/totem1.jpg">
-                    <div>
-                        <a href="contact.html">Solicitar presupuesto</a>
-                    </div>
-                </article>
-            </div>
+        </div>
+        <section>
+            <article>
+                <div class="img-services">           
+                    <img src="../assets/img/services.jpg"/>
+                </div>
+                <div class="p-services"> 
+                    <p>
+                        <strong>ESPEJO MÁGICO</strong><br><br>
+                        El Espejo Mágico SelfieCam es único en su estética debido a su estructura de madera que brinda calidez al ambiente. Con una pantalla táctil de 55" se destaca en tu fiesta captando la atención de los invitados y proporciona momentos únicos que quedan impresos en instantáneas de alta calidad.<br><br><br>
+                        <a href="contact.html" class="button">Solicitar presupuesto</a>
+                    </p>                    
+                </div>
+            </article>
+            <article>
+                <div class="img-services">           
+                    <img src="../assets/img/services_2.jpg"/>
+                </div>
+                <div class="p-services"> 
+                    <p>
+                        <strong>TOTEM FOTOGRÁFICO</strong><br><br>
+                        Brindale a tus invitados una experiencia diferente con el Tótem Fotográfico SelfieCam y obtendrás instantáneas de alta calidad en el momento. Lo que hacemos es montar un pequeño estudio de fotografía en tu fiesta para que puedan retratarse frente a la cámara y llevarse un recuerdo único. Una vez terminada la sesión los invitados podrán ingresar su E-mail en la pantalla y tener sus fotos digitales en el acto, por supuesto también se las llevarán impresas.<br><br>
+                        <a href="contact.html" class="button">Solicitar presupuesto</a> 
+                    </p>    
+                </div>
+            </article>
         </section>       
     </main>
-    <hr>
-    <footer>
-        <div>
-            <nav>                
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="packages.html">Paquetes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <footer class="footer-distributed">        
+        <div class="footer-right">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-        <div>
-            <h5>SEGUINOS</h5>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
+            <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
-        <div>
-            <p>UBICACION</p>
-        </div>
-
     </footer>
-</body>
+    </body>
 </html>

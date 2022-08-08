@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SelfieCam PhotoBooth</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SelfieCam PhotoBooth</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
+    </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div>
             <!-- LOGO -->
-            <img src="../assets/img/logo.png">
+            <a href="#"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo" class="logo"></a>
+        </div>    
             <!-- BARRA DE NAVEGACION -->
-            <nav>                
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="packages.html">Paquetes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>                 
-    </header>                
-    <main>
-        <div>
-            <img src="../assets/img/espejo_gris1.jpg"/>
-            <iframe width="560" height="399" src="https://www.youtube.com/embed/lWgqTAQCx5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h2>SOBRE NOSOTROS</h2>
-                <p>Somos lideres en el servicio de alquiler de Tótem Fotográfico y Espejo Mágico Córdoba. Desde el año 2014 brindamos a nuestros clientes una atención que se destaca por la calidad y el compromiso de nuestros productos y servicios operando en el mercado del entretenimiento, atendiendo a todo tipo de clientes y empresas a lo largo y ancho de la República Argentina.
-                Nos destacamos por utilizar en todos nuestros servicios cámara fotográfica Canon para la captura de las fotos. No usamos cámara web. Esto te garantiza una imagen digital de alta calidad capturando al detalle todas las expresiones. Una cámara web fue diseñada para grabar video llamadas, no para sacar fotos por lo tanto no congela el movimiento y suelen salir fotos con poca nitidez.<br><br>
-                Nuestros servicios son ideales para:<br/>
-                BODAS – 15 AÑOS – ANIVERSARIOS – PROMOCIONES – CUMPLEAÑOS – GRADUACIONES – EXPOSICIONES – CONVENCIONES – ¡Y TODO TIPO DE FIESTAS!</p>
-        </div>
-        <h4><a href="services.html">Consulta por nuestros servicios</a></h4>
-    </main>
-    <hr>
-    <footer>
-        <div>
-            <nav>                
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="packages.html">Paquetes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <h5>SEGUINOS</h5>
+        <nav>                
             <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="packages.html">Paquetes</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
+        </nav>                
+    </header>
+            <!--MAIN  -->
+    <main>
+        <h1>SOBRE NOSOTROS</h1>
+        <div class="img-about">            
+            <img src="../assets/img/espejo_gris1.jpg"/>
         </div>
-        <div>
-            <p>UBICACION</p>
+        <div class="p-about">    
+            <p>
+                Somos lideres en el servicio de alquiler de Tótem Fotográfico y Espejo Mágico Córdoba. Desde el año 2014 brindamos a nuestros clientes una atención que se destaca por la calidad y el compromiso de nuestros productos y servicios operando en el mercado del entretenimiento, atendiendo a todo tipo de clientes y empresas a lo largo y ancho de la República Argentina.
+                Nos destacamos por utilizar en todos nuestros servicios cámara fotográfica Canon para la captura de las fotos. No usamos cámara web. Esto te garantiza una imagen digital de alta calidad capturando al detalle todas las expresiones. Una cámara web fue diseñada para grabar video llamadas, no para sacar fotos por lo tanto no congela el movimiento y suelen salir fotos con poca nitidez.
+            </p>
         </div>
-
+        <div class="video-about">
+            <iframe class="video" width="600" height="399" src="https://www.youtube.com/embed/lWgqTAQCx5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="p-video-about">        
+            <h2>Nuestros servicios son ideales para:</h2>
+            <p>BODAS – 15 AÑOS – ANIVERSARIOS – PROMOCIONES – CUMPLEAÑOS – GRADUACIONES – EXPOSICIONES – CONVENCIONES – ¡Y TODO TIPO DE FIESTAS!                
+            </p>
+        </div>
+            <h4><button class="button"><a href="services.html">Consulta nuestros servicios</a></button></h4>
+    </main>
+    <footer class="footer-distributed">        
+        <div class="footer-right">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>            
+        </div>
+            <p>SelfieCam Photobooth &copy; 2022</p>
+        </div>
     </footer>
 </body>
 </html>

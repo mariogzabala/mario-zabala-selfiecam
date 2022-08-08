@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SelfieCam PhotoBooth</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SelfieCam PhotoBooth</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
+    </head>/
+    <body>
+    <!-- HEADER -->
     <header>
         <div>
             <!-- LOGO -->
-            <img src="../assets/img/logo.png">
+            <a href="#"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo" class="logo"></a>
+        </div>    
             <!-- BARRA DE NAVEGACION -->
-            <nav>                
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="packages.html">Paquetes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>                
+        <nav>                
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="packages.html">Paquetes</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>                
+    </header>     
     <main>
         <div>
-            <h2>NUESTROS PAQUETES INCLUYEN</h2>
+            <h1>NUESTROS PAQUETES INCLUYEN</h1>
         </div>
         <section>
-            <div>
-                <article>
-                    <img src="../assets/img/diferentes-formatos2.jpg">
-                    <h3>Diferentes formatos de impresion</h3>
-                    <p>Podes optar por una foto de 15×21 o 2 fotos iguales de 10×15 por cada sesión que los invitados realicen. El Espejo te toma 3 fotos, una cada 10 segundos y te la entrega impresa en unos segundos.</p>
-                </article>
-                <article>
-                    <img src="../assets/img/impresiones.png">
-                    <h3>Sesiones ilimitadas, Impresiones en el acto</h3>
-                    <p>Todas las fotos que puedas sacarte durante el tiempo contratado. Las impresiones se entregan en el acto en tamaño 15x21 o doble foto de 10x15.</p>
-                </article>
-                <article>
-                    <img src="../assets/img/cotillon.png">
-                    <h3>Cotillón divertido y variado</h3>
-                    <p>Gorros, sombreros, pelucas, anteojos, accesorios harán tus fotos mas divertidas y espontaneas. Entre foto y foto tendrás 10 seg. para lookearte.</p>
-                </article>
-                <article>
-                    <img src="../assets/img/diferentes_formatos.jpg">
-                    <h3>Diseño personalizado de la foto</h3>
-                    <p>Previo al evento diseñamos la impresión de la foto a tu gusto. Podemos sacar ideas de tu tarjeta de invitación, utilizar tu logo, texto, imágenes, colores o cualquier cosa que a vos te guste.</p>
-                </article>
-            </div>
+            <article class="format">
+                <img src="../assets/img/format.jpg" alt="formatos">
+                <h3>Diferentes formatos de impresion</h3>
+                <p>Podes optar por una foto de 15×21 o 2 fotos iguales de 10×15 por cada sesión que los invitados realicen. El Espejo te toma 3 fotos, una cada 10 segundos y te la entrega impresa en unos segundos.</p>
+            </article>
+            <article class="prints">
+                <img src="../assets/img/prints.jpg" alt="impresiones">
+                <h3>Sesiones ilimitadas, Impresiones en el acto</h3>
+                <p>Todas las fotos que puedas sacarte durante el tiempo contratado. Las impresiones se entregan en el acto en tamaño 15x21 o doble foto de 10x15.</p>
+            </article>
+            <article class="confeti">
+                <img src="../assets/img/confeti.jpg" alt="cotillón">
+                <h3>Cotillón divertido y variado</h3>
+                <p>Gorros, sombreros, pelucas, anteojos, accesorios harán tus fotos mas divertidas y espontaneas. Entre foto y foto tendrás 10 seg. para lookearte.</p>
+            </article>
+            <article class="prints">
+                <img src="../assets/img/template.jpg" alt="Diseño_personalizado">
+                <h3>Diseño personalizado de la foto</h3>
+                <p>Previo al evento diseñamos la impresión de la foto a tu gusto. Podemos sacar ideas de tu tarjeta de invitación, utilizar tu logo, texto, imágenes, colores o cualquier cosa que a vos te guste.</p>
+            </article>
         </section>
                     
     </main>
-    <hr>
-    <footer>
-        <div>
-            <nav>                
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="packages.html">Paquetes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <footer class="footer-distributed">        
+        <div class="footer-right">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-        <div>
-            <h5>SEGUINOS</h5>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
+            <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
-        <div>
-            <p>UBICACION</p>
-        </div>
-
     </footer>
-</body>
+    </body>
 </html>
