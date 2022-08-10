@@ -66,8 +66,7 @@ li a {
   font-size: 20px;    
 }
 
-.button {
-  position: relative;
+.button { 
   margin-left: 40%;
   margin-bottom: 3%;
   margin-top: 2%; 
@@ -88,14 +87,13 @@ section {
   margin-bottom: 5%; 
 }
 
-/*SOBRE NOSOTROS*/
+/*ABOUT*/
 .img-about {
   float: left;
   width: 50%;
   height: 399px;  
   padding-left: 5.5%;
-  padding-top: 2%;
-  background-color: beige;  
+  padding-top: 2%; 
 }
 
 main div.p-about p {
@@ -104,7 +102,6 @@ main div.p-about p {
   height: 399px; 
   padding: 2% 6% 0% 2%;
   font-size: 22px;
-  background-color: beige;
 }
 
 .p-video-about {
@@ -112,20 +109,18 @@ main div.p-about p {
   width: 50%;
   height: 399px;   
   padding: 5% 0% 0% 0%;
-  background-color: beige;
 }
 
 .p-video-about p{
   text-align: center;
-  background-color: beige;
 }
 
 .video-about {
   float: right;
   width: 50%; 
   height: 399px; 
-  background-color: beige;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
+  padding-top: 2%;
 }
 
 /*PACKAGES*/
@@ -156,7 +151,45 @@ main div.p-about p {
   height: 399px; 
   padding: 2% 6% 0% 2%;
   font-size: 22px;
-  margin-top: 2%;
+  margin-top: 3%;
+  
+  
+}
+
+
+/*CONTACT*/
+.contact-form {
+  text-align: center;
+  padding-top: 3%;  
+  background-color: lightgray;
+}
+
+.form {
+  width: 50%;
+  padding: 15px;
+  background:#f8f8f8;
+  border:1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom:25px;
+  color:#727272 !important;
+  font-size:13px;
+}
+
+.textarea{
+  height: 200px;
+  width: 50%;  
+}
+
+.button-form { 
+  margin-left: auto;
+  margin-bottom: 3%;
+  margin-top: 1%; 
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;   
 }
 
 /*FOOTER*/
@@ -171,7 +204,6 @@ main div.p-about p {
 .footer-distributed p {
   color: white;
   padding-top: 1%;
-
 }
 
 .footer-distributed .footer-right {   
@@ -187,9 +219,12 @@ main div.p-about p {
   color: grey;
   text-align: center;
   line-height: 35px;
-  margin-left: 10px;
-  transition:all .25s;  
+  margin-left: 10px;    
 }
+
+
+
+
 
 
 
