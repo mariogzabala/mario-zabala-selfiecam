@@ -8,15 +8,14 @@
 
 h1 {
   text-align: center;
-  padding: 2rem;
-  font-size: 40px        
+  padding: 5% 0% 1% 0%;
+  font-size: 40px;          
 }
 
 h2 {
   text-align: center;
   padding-bottom: 1%;
   line-height: 50px;
-
 }
 
 h3{
@@ -38,11 +37,12 @@ a {
 }
 
 header{
-  background-color:white;
+  background-color:#292c2f;
   display: flex;
   align-items: center;
   padding: 2%;
-  width: 100%;       
+  width: 100%;
+        
 }
 
 .logo{
@@ -62,8 +62,8 @@ ul li{
 
 li a {
   text-decoration: none;
-  color: black;
-  font-size: 20px;    
+  color: white;
+  font-size: 18px;    
 }
 
 .button { 
@@ -127,6 +127,7 @@ main div.p-about p {
 .template,.format,.confeti,.prints {
   float: left;
   width: 25%;
+  margin-top: 1%;
 }
 
 .template,.format,.confeti,.prints p{
