@@ -443,6 +443,8 @@ section article h3{
   }
   .videoAbout {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .textoAbout{
     width: 100%;
