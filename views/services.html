@@ -8,12 +8,12 @@
     <link href="../css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- HEADER -->
+<body class="serviceContainer">    
+        <!-- HEADER -->
     <header>
-        <div>
             <!-- LOGO -->
-            <a href="#"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo" class="logo"></a>
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo"></a>
         </div>    
             <!-- BARRA DE NAVEGACION -->
         <nav>                
@@ -26,50 +26,42 @@
             </ul>
         </nav>                
     </header>
-    <!--MAIN  -->
-    <main>
-        <div>    
+        <!--MAIN  -->
+    <main class="mainService">
+        <div class="encabezadoService">    
             <h1>SERVICIOS</h1>
-            <p>
-                SelfieCam PhotoBooth utiliza en todos sus servicios camara profesional Canon para la captura de las imagenes. Las innumerables configuraciones que te permiten hacer estos equipos te garantizan fotos de alta calidad. Sumado a esto tambien utilizamos flash de estudio para la correcta iluminacion, lo cual nos binda nitidez en las imágenes capturadas. En resumen, montamos un pequeño estudio de fotografía en tu fiesta
-            </p>
         </div>
-        <section class="services">
-            <article>
-                <div class="img-services">           
-                    <img src="../assets/img/services.jpg"/>
-                </div>
-                <div class="p-services"> 
-                    <p>
-                        <strong>ESPEJO MÁGICO</strong><br><br>
-                        El Espejo Mágico SelfieCam es único en su estética debido a su estructura de madera que brinda calidez al ambiente. Con una pantalla táctil de 55" se destaca en tu fiesta captando la atención de los invitados y proporciona momentos únicos que quedan impresos en instantáneas de alta calidad.<br><br><br>
-                        <a href="contact.html" class="button">Solicitar presupuesto</a>
-                    </p>                    
-                </div>
-            </article>
-            <article>
-                <div class="img-services">           
-                    <img src="../assets/img/services_2.jpg"/>
-                </div>
-                <div class="p-services"> 
-                    <p>
-                        <strong>TOTEM FOTOGRÁFICO</strong><br><br>
-                        Brindale a tus invitados una experiencia diferente con el Tótem Fotográfico SelfieCam y obtendrás instantáneas de alta calidad en el momento. Lo que hacemos es montar un pequeño estudio de fotografía en tu fiesta para que puedan retratarse frente a la cámara y llevarse un recuerdo único. Una vez terminada la sesión los invitados podrán ingresar su E-mail en la pantalla y tener sus fotos digitales en el acto, por supuesto también se las llevarán impresas.<br><br>
-                        <a href="contact.html" class="button">Solicitar presupuesto</a> 
-                    </p>    
-                </div>
-            </article>
-        </section>       
+        <div class="textoEncabezadoService">
+            <p>SelfieCam PhotoBooth utiliza en todos sus servicios camara profesional Canon para la captura de las imagenes. Las innumerables configuraciones que te permiten hacer estos equipos te garantizan fotos de alta calidad. Sumado a esto tambien utilizamos flash de estudio para la correcta iluminacion, lo cual nos binda nitidez en las imágenes capturadas. En resumen, montamos un pequeño estudio de fotografía en tu fiesta.</p>
+        </div>        
+        <div class="imgEspejoService">           
+            <img src="../assets/img/services.jpg"/>
+        </div>
+        <div class="textoEspejoService"> 
+            <h2>ESPEJO MÁGICO</h2><br>
+            <p>El Espejo Mágico SelfieCam es único en su estética debido a su estructura de madera que brinda calidez al ambiente. Con una pantalla táctil de 55" se destaca en tu fiesta captando la atención de los invitados y proporciona momentos únicos que quedan impresos en instantáneas de alta calidad.</p>                    
+        </div>
+        <div class="imgTotemService">           
+            <img src="../assets/img/services_2.jpg"/>
+        </div>
+        <div class="textoTotemService"> 
+            <h2>TOTEM FOTOGRÁFICO</h2><br>
+            <p>Brindale a tus invitados una experiencia diferente con el Tótem Fotográfico SelfieCam y obtendrás instantáneas de alta calidad en el momento. Lo que hacemos es montar un pequeño estudio de fotografía en tu fiesta para que puedan retratarse frente a la cámara y llevarse un recuerdo único. Una vez terminada la sesión los invitados podrán ingresar su E-mail en la pantalla y tener sus fotos digitales en el acto, por supuesto también se las llevarán impresas.</p>    
+        </div>
+        <button class="button">
+            <a href="views/contact.html">Pedi tu presupuesto ahora</a>
+        </button>
     </main>
-    <!-- FOOTER -->
-    <footer class="footer-distributed">        
-        <div class="footer-right">
+        <!-- FOOTER -->
+    <footer>        
+        <div class="footerIcons">
             <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
+        <div class="copyright">
             <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 * {
   margin: 0px;
   padding: 0px;    
@@ -6,165 +5,356 @@
   font-family: 'Manjari', sans-serif;   
 }
 
-h1 {
+/* BODY */
+h1{
   text-align: center;
-  padding: 5% 0% 1% 0%;
-  font-size: 40px;          
+  padding: 3% 0% 2% 0%;
+  font-size: 50px;
 }
-
 h2 {
   text-align: center;
-  padding-bottom: 1%;
-  line-height: 50px;
+  margin-bottom: 2%;    
 }
-
 h3{
   text-align: center;
   font-weight: bold;
-  line-height: 30px;    
+  line-height: 30px; 
+  margin-bottom: 2%;   
+}
+p {
+  text-align: justify;
+  padding: 0% 5%;
+  font-size: 22px;
 }
 
-main div p {
-  text-align: center; 
-  padding: 0% 10% 1% 10%;    
-  font-size: 23px;
-  text-align: justify;    
+/* HEADER */
+li {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
 }
-
+ul{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 5%   
+}
+nav{
+  width: 100%;
+}
 a {
   text-decoration: none;
   color: white;
+  list-style-type: none;  
 }
-
-header{
-  background-color:#292c2f;
+.logo a img {
+  width: 50%;  
+}
+header {
+  grid-area: header;
   display: flex;
   align-items: center;
-  padding: 2%;
+  background-color: #292c2f;
   width: 100%;
-        
+  text-align: left;
+  padding: 3% 5%;
+  font-size: 18px;  
 }
 
-.logo{
-  margin-left: 20%;
-  width: 30%;        
+/*FOOTER*/
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  background-color: #292c2f;
+  width: 100%;
+  text-align: left;
+  padding: 3% 5%;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2%;  
 }
-
-header nav ul li{    
-  list-style-type: none;
-  display: inline-block;
-  padding-right: 20px;     
+footer .footerIcons a {
+  width: 25px;
+  height: 25px; 
+  border-radius: 2px;
+  font-size: 35px;
+  color: grey;
+  line-height: 35px;  
+  text-align: center;  
+  line-height: 35px;
+  margin-left: 3px; 
 }
-
-ul li{    
-  margin-right: 10px;    
+.footerContact{
+  margin-top: 0%;
 }
-
-li a {
-  text-decoration: none;
+.copyright p{
   color: white;
-  font-size: 18px;    
+  font-size: 18px;
+  padding: 0%;
 }
 
-.button { 
+/* ANIMACIONES ICONOS FOOTER */
+.fa-brands:hover {
+  transform:scale(1.1); 
+  transition:all .25s;  
+}
+
+/* BUTTON */
+.button {
+  grid-area: button;
+  display: flex;
   margin-left: 40%;
-  margin-bottom: 3%;
-  margin-top: 2%; 
+  justify-content: center;
+  width: 20%; 
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 18px;   
+  padding: 1.5% 0%;
+  font-size: 18px; 
 }
 
-section {
+/* ANIMACION BUTTON */
+.button:hover{
+  transform:scale(1.1);
+  transition:all .25s;
+}
+
+/* GRID-INDEX */
+.indexContainer{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "footer footer";
   width: 100%;
-  display: inline-block;
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 5%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* GRID DENTRO DE GRID-INDEX */
+.mainIndex{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4/auto);
+  grid-template-areas:
+  "imgIndex imgIndex"
+  "encabezado encabezado"
+  "textoEncabezado textoEncabezado"
+  "button button";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imgIndex {
+  grid-area: imgIndex;
+  width: 100%;
+}
+.encabezado {
+  grid-area: encabezado;
+  width: 100%;
+}
+.textoEncabezado {
+  grid-area: textoEncabezado;
+  width: 100%;
 }
 
 /*ABOUT*/
-.img-about {
-  float: left;
-  width: 50%;
-  height: 399px;  
-  padding-left: 5.5%;
-  padding-top: 2%; 
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "footer footer";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-main div.p-about p {
-  float: left;
-  width: 50%;
-  height: 399px; 
-  padding: 2% 6% 0% 2%;
-  font-size: 22px;
+.mainAbout{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4/auto);
+  grid-template-areas:
+  "encabezadoAbout encabezadoAbout"
+  "imgAbout textoAbout"
+  "descriptionAbout videoAbout"
+  "button button";
+  width: 100%;  
 }
-
-.p-video-about {
-  float: left;
-  width: 50%;
-  height: 399px;   
-  padding: 5% 0% 0% 0%;
+.encabezadoAbout {
+  grid-area: encabezadoAbout;
+  width: 100%;
 }
-
-.p-video-about p{
-  text-align: center;
+.imgAbout {
+  grid-area: imgAbout;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-
-.video-about {
-  float: right;
-  width: 50%; 
-  height: 399px; 
-  margin-bottom: 3%;
-  padding-top: 2%;
+.textoAbout {
+  grid-area: textoAbout;
+  width: 100%;
+  padding-right: 8%;
 }
-
-/*PACKAGES*/
-.template,.format,.confeti,.prints {
-  float: left;
-  width: 25%;
-  margin-top: 1%;
+.descriptionAbout {
+  grid-area: descriptionAbout;
+  width: 100%;
+  padding: 20% 0% 8% 8%;
 }
-
-.template,.format,.confeti,.prints p{
-  padding-left: 1%;
-  padding-right: 1%;
-  text-align: center;
-  font-size: 20px;
+.videoAbout {
+  grid-area: videoAbout;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 8%;
 }
 
 /*SERVICES*/
-.img-services {
-  float: left;
-  width: 50%;
-  height: 399px;  
-  padding-left: 5.5%;
-  padding-top: 4%; 
+.serviceContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "footer footer";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainService{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5/auto);
+  grid-template-areas: 
+  "encabezadoService encabezadoService"
+  "textoEncabezadoService textoEncabezadoService"
+  "imgEspejoService textoEspejoService"
+  "imgTotemService textoTotemService"
+  "button button";
+}
+.encabezadoService {
+  grid-area: encabezadoService;
+  width: 100%;
+}
+.textoEncabezadoService {
+  grid-area: textoEncabezadoService;
+  width: 100%;
+}
+.imgEspejoService {
+  grid-area: imgEspejoService;
+  width: 100%;
+  padding: 10% 0% 0% 10%;
+}
+.textoEspejoService {
+  grid-area: textoEspejoService;
+  width: 100%;
+  padding: 10% 5% 0% 0%;
+}
+.imgTotemService {
+  grid-area: imgTotemService;
+  width: 100%;
+  padding: 10% 0% 5% 10%;
+}
+.textoTotemService {
+  grid-area: textoTotemService;
+  width: 100%;
+  padding: 10% 5% 5% 0%;
 }
 
-.p-services p {
-  float: left;
-  width: 50%;
-  height: 399px; 
-  padding: 2% 6% 0% 2%;
-  font-size: 22px;
-  margin-top: 3%;
-  
-  
+/*PACKAGES*/
+.packageContainer{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4/auto);
+  grid-template-areas: 
+  "header header"
+  "packageEncabezado packageEncabezado"
+  "section section"
+  "footer footer";  
+}
+.packageEncabezado {
+  grid-area: packageEncabezado;
+  width: 100%; 
+}
+.mainPackage{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "format prints"
+  "confeti design";
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;    
+}
+section article.format {
+  grid-area: format;
+  width:35%;    
+}
+section article.prints{
+  grid-area: prints;
+  width: 35%;  
+}
+section article.confeti{
+  grid-area: confeti;
+  width: 35%;    
+}
+section article.design{
+  grid-area: design;
+  width: 35%; 
+}
+section article img{
+  width: 100%;
+  padding-bottom: 5%;
+}
+section article h3{
+  font-size: 21px;
+  text-transform: uppercase;  
+}
+.confeti,.design{
+  margin-top: 4%;
 }
 
-
-/*CONTACT*/
-.contact-form {
+/* CONTACT */
+.contactContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "footer footer";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainContact{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: 
+  "encabezadoContact"
+  "contactForm"
+  "button";  
+}
+.contactForm {
   text-align: center;
   padding-top: 3%;  
   background-color: lightgray;
+  border-bottom: 20px solid lightgray;
 }
-
 .form {
   width: 50%;
   padding: 15px;
@@ -172,56 +362,171 @@ main div.p-about p {
   border:1px solid rgba(0, 0, 0, 0.075);
   margin-bottom:25px;
   color:#727272 !important;
-  font-size:13px;
+  font-size:13px;  
 }
-
 .textarea{
   height: 200px;
   width: 50%;  
 }
 
-.button-form { 
-  margin-left: auto;
-  margin-bottom: 3%;
-  margin-top: 1%; 
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 18px;   
-}
+/* MEDIA QUERIES */
+@media (max-width: 768px){
+  
+  /* HEADER Y FOOTER */
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: 5% 0%    
+  }
+  ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 26px
+  }
+  h1{
+    font-size: 30px;
+    margin: 5% 0%;
+  }
+  h2{
+    width: 100%;  
+    padding: 0% 3%;
+  }
+  h3{
+    padding: 0% 3%;
+  }
+  img{
+    width: 100%;
+  }
+  .button {
+    width: 40%; 
+    font-size: 15px;
+    margin: 5% 30% 5% 30%;
+  }
+  .footerIcons{
+    width: 100%;
+    text-align: center;
+    margin: 5% 0%;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  .copyright p{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
 
-/*FOOTER*/
-.footer-distributed {
-  background-color: #292c2f;
+  /* ABOUT */
+  .mainAbout{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "encabezadoAbout"
+    "imgAbout"
+    "textoAbout"
+    "videoAbout"
+    "descriptionAbout"
+    "button";
+    width: 100%;
+  }
+  .videoAbout {
+    width: 100%;
+  }
+  .textoAbout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10% 0%;
+    padding:0%
+  }
+  .descriptionAbout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0%
+  }
+  .descriptionAbout p{
+    text-align: center;
+  }
+  /* SERVICES */
+
+  .mainService{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imgEspejoService"
+    "textoEspejoService"
+    "imgTotemService"
+    "textoTotemService";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgEspejoService, .textoEspejoService,
+  .imgTotemService, .textoTotemService{
+    width: 100%;
+    padding: 5% 0% 5% 0%;
+  }
+
+  /* PACKAGES */
+.mainPackage{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "encabezadoService"
+  "textoEncabezadoService"
+  "imgEspejoService"
+  "imgTotemService"
+  "button";
   width: 100%;
-  text-align: left;
-  font: normal 18px sans-serif;
-  padding: 45px 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+section article.format{
+  grid-area: format;
+  width: 100%;
+  margin-bottom: 5%;
+}
+section article.prints{
+  grid-area: prints;
+  width: 100%;
+  margin-bottom: 5%;
+}
+section article.confeti{
+  grid-area: confeti;
+  width: 100%;
+  margin-bottom: 5%;
+}
+section article.design{
+  grid-area: design;
+  width: 100%;
+  margin-bottom: 5%; 
 }
 
-.footer-distributed p {
-  color: white;
-  padding-top: 1%;
+/* CONTACT */
+.contactForm{
+  width: 100%;  
+}
+.form{
+  width: 90%;
 }
 
-.footer-distributed .footer-right {   
-  float: right;
-}
 
-.footer-distributed .footer-right a {
-  display: inline-block;
-  width: 25px;
-  height: 25px; 
-  border-radius: 2px;
-  font-size: 35px;
-  color: grey;
-  text-align: center;
-  line-height: 35px;
-  margin-left: 10px;    
-}
 
 
 

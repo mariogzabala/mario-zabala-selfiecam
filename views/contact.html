@@ -8,12 +8,12 @@
     <link href="../css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- HEADER -->
+<body class="contactContainer">    
+        <!-- HEADER -->
     <header>
-        <div>
             <!-- LOGO -->
-            <a href="#"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo" class="logo"></a>
+        <div class="logo">    
+            <a href="../index.html"><img src="../assets/img/logo.png" alt="selfiecam photobooth logo"></a>
         </div>    
             <!-- BARRA DE NAVEGACION -->
         <nav>                
@@ -26,14 +26,14 @@
             </ul>
         </nav>                
     </header>
-    <!--MAIN  -->
-    <main>
-        <div>
+        <!--MAIN  -->
+    <main class="mainContact">
+        <div class="encabezadoContact">
             <h1>CONTACTANOS</h1>
             <h3>Envianos tu consulta y te respondemos a la brevedad</h3>
         </div>
         <!-- FORMULARIO -->
-        <form method="post" action="#" class="contact-form">
+        <form method="post" action="#" class="contactForm">
                 
             <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre"/>
                 
@@ -42,18 +42,19 @@
             <input type="number" name="subject" id="subject" required="required" class="form" placeholder="Teléfono"/>
             
             <textarea name="message" id="message" class="form textarea"  placeholder="Mensaje, Boda, 15 años, cumpleaños, evento empresarial, etc"></textarea>
-        <div>                    
-            <button type="submit" id="submit" name="submit" class="button-form">Enviar</button>
-        </div>         
+            <div>                    
+                <button class="button" type="submit" id="submit" name="submit">Enviar mensaje</button>
+            </div>         
         </form>                
     </main>
-    <!-- FOOTER -->
-    <footer class="footer-distributed">        
-        <div class="footer-right">
+        <!-- FOOTER -->
+    <footer class="footerContact">        
+        <div class="footerIcons">
             <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>          
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
+        <div class="copyright">
             <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
     </footer>

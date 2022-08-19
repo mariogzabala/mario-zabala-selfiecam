@@ -8,14 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- HEADER -->
+<body class="indexContainer">
+        <!-- HEADER -->
     <header>
-        <div>
             <!-- LOGO -->
-            <a href="#"><img src="./assets/img/logo.png" alt="selfiecam photobooth logo" class="logo"></a>
+        <div class="logo">    
+            <a href="#"><img src="./assets/img/logo.png" alt="selfiecam photobooth logo"></a>
         </div>    
-        <!-- BARRA DE NAVEGACION -->
+            <!-- BARRA DE NAVEGACION -->
         <nav>                
             <ul>
                 <li><a href="#">Home</a></li>
@@ -26,40 +26,35 @@
             </ul>
         </nav>                
     </header>
-    <!--MAIN  -->
-    <main>
-        <div>
+        <!-- MAIN -->
+    <main class="mainIndex">
+        <div class="imgIndex">
             <img src="./assets/img/portada1.jpg" alt="Totem Fotografico Cordoba" style="width: 100%;"/>
+        </div>        
+        <div class="encabezado">
+            <h1>ESPEJO MÁGICO Y MUCHO MÁS..</h1>
         </div>
-        <div>
-            <h1>Espejo Mágico y mucho mas..</h1>
-            <p>
-                SelfieCam PhotoBooth ofrece servicios de excelencia en Totem fotográfico y Espejos Mágicos, el mismo es prestado desde la ciudad de Córdoba y para todo el interior de la provincia.
-                Nuestro diferencial es la calidad de imagen e impresión de tipo profesional, así como también la responsabilidad y compromiso con nuestros clientes.
-                ¡El momento de sacarse las selfies es muy divertido! Tus invitados se divertirán mucho y se llevarán un recuerdo con un diseño exclusivo para tu evento.
-            </p>
-        </div>
-        <div>    
-            <h2>Si estas planeando un evento único, que el recuerdo te dure toda la vida!!</h2>
-        </div>
-        <div>    
+        <div class="textoEncabezado">
+            <p>SelfieCam PhotoBooth ofrece servicios de excelencia en Totem fotográfico y Espejos Mágicos, el mismo es prestado desde la ciudad de Córdoba y para todo el interior de la provincia.
+            Nuestro diferencial es la calidad de imagen e impresión de tipo profesional, así como también la responsabilidad y compromiso con nuestros clientes.
+            ¡El momento de sacarse las selfies es muy divertido! Tus invitados se divertirán mucho y se llevarán un recuerdo con un diseño exclusivo para tu evento.</p><br><br>
+            <h2>Si estas planeando un evento único, que el recuerdo te dure toda la vida!!</h2><br>
             <h3>Contactanos ya mismo y reserva tu fecha</h3>
         </div> 
-        <div>   
-            <button class="button">
-                <a href="views/contact.html">Pedi tu presupuesto ahora</a>
-            </button>
-        </div>
-    </main>
-    <!-- FOOTER -->
-    <footer class="footer-distributed">        
-			<div class="footer-right">
-			<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <button class="button">
+            <a href="views/contact.html">Pedi tu presupuesto ahora</a>
+        </button>
+    </main>            
+        <!-- FOOTER -->
+    <footer>
+		<div class="footerIcons">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
-			</div>
-				<p>SelfieCam Photobooth &copy; 2022</p>
-			</div>
+		</div>
+        <div class="copyright">
+			<p>SelfieCam Photobooth &copy; 2022</p>
+		</div>
     </footer>
 </body>
 </html>
