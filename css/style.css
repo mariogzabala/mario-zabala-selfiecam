@@ -477,74 +477,56 @@ section article h3{
     flex-direction: column;
     width: 100%;
   }
-  .imgEspejoService, .textoEspejoService,
-  .imgTotemService, .textoTotemService{
+  .imgEspejoService, 
+  .textoEspejoService,
+  .imgTotemService, 
+  .textoTotemService{
     width: 100%;
     padding: 5% 0% 5% 0%;
   }
 
   /* PACKAGES */
-.mainPackage{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "encabezadoService"
-  "textoEncabezadoService"
-  "imgEspejoService"
-  "imgTotemService"
-  "button";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  .mainPackage{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "encabezadoService"
+    "textoEncabezadoService"
+    "imgEspejoService"
+    "imgTotemService"
+    "button";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  section article.format{
+    grid-area: format;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  section article.prints{
+    grid-area: prints;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  section article.confeti{
+    grid-area: confeti;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  section article.design{
+    grid-area: design;
+    width: 100%;
+    margin-bottom: 5%; 
+  }
+
+  /* CONTACT */
+  .contactForm{
+    width: 100%;  
+  }
+  .form{
+    width: 90%; 
+  }
 }
-section article.format{
-  grid-area: format;
-  width: 100%;
-  margin-bottom: 5%;
-}
-section article.prints{
-  grid-area: prints;
-  width: 100%;
-  margin-bottom: 5%;
-}
-section article.confeti{
-  grid-area: confeti;
-  width: 100%;
-  margin-bottom: 5%;
-}
-section article.design{
-  grid-area: design;
-  width: 100%;
-  margin-bottom: 5%; 
-}
-
-/* CONTACT */
-.contactForm{
-  width: 100%;  
-}
-.form{
-  width: 90%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
