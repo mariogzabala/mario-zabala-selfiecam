@@ -6,7 +6,7 @@
 }
 
 /* BODY */
-h1{
+h1 {
   text-align: center;
   padding: 3% 0% 2% 0%;
   font-size: 50px;
@@ -15,7 +15,7 @@ h2 {
   text-align: center;
   margin-bottom: 2%;    
 }
-h3{
+h3 {
   text-align: center;
   font-weight: bold;
   line-height: 30px; 
@@ -33,13 +33,13 @@ li {
   color: white;
   list-style-type: none;
 }
-ul{
+ul {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 5%   
 }
-nav{
+nav {
   width: 100%;
 }
 a {
@@ -86,10 +86,10 @@ footer .footerIcons a {
   line-height: 35px;
   margin-left: 3px; 
 }
-.footerContact{
+.footerContact {
   margin-top: 0%;
 }
-.copyright p{
+.copyright p {
   color: white;
   font-size: 18px;
   padding: 0%;
@@ -116,28 +116,13 @@ footer .footerIcons a {
 }
 
 /* ANIMACION BUTTON */
-.button:hover{
+.button:hover {
   transform:scale(1.1);
   transition:all .25s;
 }
 
 /* GRID-INDEX */
-.indexContainer{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3/auto);
-  grid-template-areas: 
-  "header header"
-  "main main"
-  "footer footer";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* GRID DENTRO DE GRID-INDEX */
-.mainIndex{
+.mainIndex {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4/auto);
@@ -164,21 +149,8 @@ footer .footerIcons a {
   width: 100%;
 }
 
-/*ABOUT*/
-.aboutContainer {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3/auto);
-  grid-template-areas: 
-  "header header"
-  "main main"
-  "footer footer";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.mainAbout{
+/* GRID-ABOUT */
+.mainAbout {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(4/auto);
@@ -217,21 +189,8 @@ footer .footerIcons a {
   padding-bottom: 8%;
 }
 
-/*SERVICES*/
-.serviceContainer {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3/auto);
-  grid-template-areas: 
-  "header header"
-  "main main"
-  "footer footer";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.mainService{
+/*GRID-SERVICES*/
+.mainService {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(5/auto);
@@ -271,76 +230,52 @@ footer .footerIcons a {
   padding: 10% 5% 5% 0%;
 }
 
-/*PACKAGES*/
-.packageContainer{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(4/auto);
-  grid-template-areas: 
-  "header header"
-  "packageEncabezado packageEncabezado"
-  "section section"
-  "footer footer";  
-}
-.packageEncabezado {
-  grid-area: packageEncabezado;
-  width: 100%; 
-}
-.mainPackage{
+/*GRID-PACKAGES*/
+.mainPackage {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
+  "packageEncabezado packageEncabezado"
   "format prints"
   "confeti design";
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;    
+  justify-items: center; 
 }
-section article.format {
+.packageEncabezado {
+  grid-area: packageEncabezado;
+  width: 100%;}
+
+.format {
   grid-area: format;
-  width:35%;    
+  width:70%;    
 }
-section article.prints{
+.prints {
   grid-area: prints;
-  width: 35%;  
+  width: 70%;  
 }
-section article.confeti{
+.confeti {
   grid-area: confeti;
-  width: 35%;    
+  width: 70%;    
 }
-section article.design{
+.design {
   grid-area: design;
-  width: 35%; 
+  width: 70%; 
 }
-section article img{
+article img {
   width: 100%;
   padding-bottom: 5%;
 }
-section article h3{
+article h3 {
   font-size: 21px;
   text-transform: uppercase;  
 }
-.confeti,.design{
+.confeti,.design {
   margin-top: 4%;
 }
 
-/* CONTACT */
-.contactContainer {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3/auto);
-  grid-template-areas: 
-  "header header"
-  "main main"
-  "footer footer";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.mainContact{
+/* GRID-CONTACT */
+.mainContact {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3/auto);
@@ -364,7 +299,7 @@ section article h3{
   color:#727272 !important;
   font-size:13px;  
 }
-.textarea{
+.textarea {
   height: 200px;
   width: 50%;  
 }
@@ -373,7 +308,7 @@ section article h3{
 @media (max-width: 768px){
   
   /* HEADER Y FOOTER */
-  header{
+  header {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -384,25 +319,25 @@ section article h3{
     text-align: center;
     margin: 5% 0%    
   }
-  ul{
+  ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: 26px
   }
-  h1{
+  h1 {
     font-size: 30px;
     margin: 5% 0%;
   }
-  h2{
+  h2 {
     width: 100%;  
     padding: 0% 3%;
   }
-  h3{
+  h3 {
     padding: 0% 3%;
   }
-  img{
+  img {
     width: 100%;
   }
   .button {
@@ -410,25 +345,25 @@ section article h3{
     font-size: 15px;
     margin: 5% 30% 5% 30%;
   }
-  .footerIcons{
+  .footerIcons {
     width: 100%;
     text-align: center;
     margin: 5% 0%;
   }
-  footer{
+  footer {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:center;
   }
-  .copyright p{
+  .copyright p {
     width: 100%;
     font-size: 15px;
     text-align: center;
   }
 
   /* ABOUT */
-  .mainAbout{
+  .mainAbout {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -446,7 +381,7 @@ section article h3{
     display: flex;
     justify-content: center;
   }
-  .textoAbout{
+  .textoAbout {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -459,12 +394,12 @@ section article h3{
     flex-direction: column;
     padding: 0%
   }
-  .descriptionAbout p{
+  .descriptionAbout p {
     text-align: center;
   }
+  
   /* SERVICES */
-
-  .mainService{
+  .mainService {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -477,74 +412,42 @@ section article h3{
     flex-direction: column;
     width: 100%;
   }
-  .imgEspejoService, .textoEspejoService,
-  .imgTotemService, .textoTotemService{
+  .imgEspejoService, 
+  .textoEspejoService,
+  .imgTotemService, 
+  .textoTotemService {
     width: 100%;
     padding: 5% 0% 5% 0%;
   }
 
   /* PACKAGES */
-.mainPackage{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "encabezadoService"
-  "textoEncabezadoService"
-  "imgEspejoService"
-  "imgTotemService"
-  "button";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  .mainPackage {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5/auto);
+    grid-template-areas:
+    "packageEncabezado"
+    "format"
+    "prints"
+    "confeti"
+    "design";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: center;
+  }
+  .format,.prints,.confeti,.design {
+    grid-area: format prints confeti design;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  /* CONTACT */
+  .contactForm {
+    width: 100%;  
+  }
+  .form {
+    width: 90%;
+  }
 }
-section article.format{
-  grid-area: format;
-  width: 100%;
-  margin-bottom: 5%;
-}
-section article.prints{
-  grid-area: prints;
-  width: 100%;
-  margin-bottom: 5%;
-}
-section article.confeti{
-  grid-area: confeti;
-  width: 100%;
-  margin-bottom: 5%;
-}
-section article.design{
-  grid-area: design;
-  width: 100%;
-  margin-bottom: 5%; 
-}
-
-/* CONTACT */
-.contactForm{
-  width: 100%;  
-}
-.form{
-  width: 90%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
