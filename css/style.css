@@ -246,21 +246,9 @@ footer .footerIcons a {
   grid-area: packageEncabezado;
   width: 100%;}
 
-.format {
-  grid-area: format;
+.format, .prints, .confeti, .design {
+  grid-area: format prints confeti design;
   width:70%;    
-}
-.prints {
-  grid-area: prints;
-  width: 70%;  
-}
-.confeti {
-  grid-area: confeti;
-  width: 70%;    
-}
-.design {
-  grid-area: design;
-  width: 70%; 
 }
 article img {
   width: 100%;
