@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SelfieCam PhotoBooth</title>
     <link href="../css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
 <body class="serviceContainer">    
@@ -34,21 +35,21 @@
         <div class="textoEncabezadoService">
             <p>SelfieCam PhotoBooth utiliza en todos sus servicios camara profesional Canon para la captura de las imagenes. Las innumerables configuraciones que te permiten hacer estos equipos te garantizan fotos de alta calidad. Sumado a esto tambien utilizamos flash de estudio para la correcta iluminacion, lo cual nos binda nitidez en las imágenes capturadas. En resumen, montamos un pequeño estudio de fotografía en tu fiesta.</p>
         </div>        
-        <div class="imgEspejoService">           
+        <div data-aos="fade-left" class="imgEspejoService">           
             <img src="../assets/img/services.jpg"/>
         </div>
         <div class="textoEspejoService"> 
             <h2>ESPEJO MÁGICO</h2><br>
             <p>El Espejo Mágico SelfieCam es único en su estética debido a su estructura de madera que brinda calidez al ambiente. Con una pantalla táctil de 55" se destaca en tu fiesta captando la atención de los invitados y proporciona momentos únicos que quedan impresos en instantáneas de alta calidad.</p>                    
         </div>
-        <div class="imgTotemService">           
+        <div data-aos="fade-left" class="imgTotemService">           
             <img src="../assets/img/services_2.jpg"/>
         </div>
         <div class="textoTotemService"> 
             <h2>TOTEM FOTOGRÁFICO</h2><br>
             <p>Brindale a tus invitados una experiencia diferente con el Tótem Fotográfico SelfieCam y obtendrás instantáneas de alta calidad en el momento. Lo que hacemos es montar un pequeño estudio de fotografía en tu fiesta para que puedan retratarse frente a la cámara y llevarse un recuerdo único. Una vez terminada la sesión los invitados podrán ingresar su E-mail en la pantalla y tener sus fotos digitales en el acto, por supuesto también se las llevarán impresas.</p>    
         </div>
-        <button class="button">
+        <button data-aos="fade-up" class="button">
             <a href="contact.html">Pedi tu presupuesto ahora</a>
         </button>
     </main>
@@ -62,6 +63,13 @@
         <div class="copyright">
             <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
-    </footer>    
+    </footer> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>   
 </body>
 </html>

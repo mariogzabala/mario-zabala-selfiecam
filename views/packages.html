@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SelfieCam PhotoBooth</title>
     <link href="../css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,22 +34,22 @@
                 <h1>NUESTROS PAQUETES INCLUYEN</h1>
             </div>
             <article class="format">
-                <img src="../assets/img/format.jpg" alt="formatos">
+                <img src="../assets/img/format.jpg" alt="formatos" data-aos="flip-left">
                 <h3>Diferentes formatos de impresion</h3>
                 <p>Podes optar por una foto de 15×21 o 2 fotos iguales de 10×15 por cada sesión que los invitados realicen. El Espejo te toma 3 fotos, una cada 10 segundos y te la entrega impresa en unos segundos.</p>
             </article>
             <article class="prints">
-                <img src="../assets/img/prints.jpg" alt="impresiones">
+                <img src="../assets/img/prints.jpg" alt="impresiones" data-aos="flip-right">
                 <h3>Sesiones ilimitadas, Impresiones en el acto</h3>
                 <p>Todas las fotos que puedas sacarte durante el tiempo contratado. Las impresiones se entregan en el acto en tamaño 15x21 o doble foto de 10x15.</p>
             </article>
             <article class="confeti">
-                <img src="../assets/img/confeti.jpg" alt="cotillón">
+                <img src="../assets/img/confeti.jpg" alt="cotillón" data-aos="flip-left">
                 <h3>Cotillón divertido y variado</h3>
                 <p>Gorros, sombreros, pelucas, anteojos, accesorios harán tus fotos mas divertidas y espontaneas. Entre foto y foto tendrás 10 seg. para lookearte.</p>
             </article>
             <article class="design">
-                <img src="../assets/img/template.jpg" alt="Diseño_personalizado">
+                <img src="../assets/img/template.jpg" alt="Diseño_personalizado" data-aos="flip-right">
                 <h3>Diseño personalizado de la foto</h3>
                 <p>Previo al evento diseñamos la impresión de la foto a tu gusto. Podemos sacar ideas de tu tarjeta de invitación, utilizar tu logo, texto, imágenes, colores o cualquier cosa que a vos te guste.</p>
             </article>
@@ -64,6 +65,13 @@
         <div class="copyright">
             <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
-    </footer>        
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>        
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SelfieCam PhotoBooth</title>
     <link href="../css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
 <body class="contactContainer">    
@@ -43,7 +44,7 @@
             
             <textarea name="message" id="message" class="form textarea"  placeholder="Mensaje, Boda, 15 años, cumpleaños, evento empresarial, etc"></textarea>
             <div>                    
-                <button class="button" type="submit" id="submit" name="submit">Enviar mensaje</button>
+                <button data-aos="fade-up" class="button" type="submit" id="submit" name="submit">Enviar mensaje</button>
             </div>         
         </form>                
     </main>
@@ -58,5 +59,12 @@
             <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
 </body>
 </html>

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SelfieCam PhotoBooth</title>
     <link href="../css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>SelfieCam PhotoBooth</title>
 </head>
 <body class="aboutContainer">
         <!-- HEADER -->
@@ -32,20 +33,20 @@
             <h1>SOBRE NOSOTROS</h1>
         </div>
         <div class="imgAbout">            
-            <img src="../assets/img/espejo_gris1.jpg"/>
+            <img src="../assets/img/espejo_gris1.jpg" data-aos="fade-right"/>
         </div>
         <div class="textoAbout">    
             <p>Somos lideres en el servicio de alquiler de Tótem Fotográfico y Espejo Mágico Córdoba. Desde el año 2014 brindamos a nuestros clientes una atención que se destaca por la calidad y el compromiso de nuestros productos y servicios operando en el mercado del entretenimiento, atendiendo a todo tipo de clientes y empresas a lo largo y ancho de la República Argentina.
             Nos destacamos por utilizar en todos nuestros servicios cámara fotográfica Canon para la captura de las fotos. No usamos cámara web. Esto te garantiza una imagen digital de alta calidad capturando al detalle todas las expresiones. Una cámara web fue diseñada para grabar video llamadas, no para sacar fotos por lo tanto no congela el movimiento y suelen salir fotos con poca nitidez.</p>
         </div>
         <div class="videoAbout">
-            <iframe class="video" width="600" height="399" src="https://www.youtube.com/embed/lWgqTAQCx5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe data-aos="fade-left" class="video" width="600" height="399" src="https://www.youtube.com/embed/lWgqTAQCx5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="descriptionAbout">        
             <h2>Nuestros servicios son ideales para:</h2>
             <p>BODAS – 15 AÑOS – ANIVERSARIOS – PROMOCIONES – CUMPLEAÑOS – GRADUACIONES – EXPOSICIONES – CONVENCIONES – ¡Y TODO TIPO DE FIESTAS!.</p>
         </div>
-        <button class="button">
+        <button data-aos="fade-up" class="button">
             <a href="services.html">Consulta nuestros servicios</a>
         </button>
     </main>            
@@ -60,5 +61,12 @@
             <p>SelfieCam Photobooth &copy; 2022</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
 </body>
 </html>

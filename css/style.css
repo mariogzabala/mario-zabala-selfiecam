@@ -136,16 +136,8 @@ footer .footerIcons a {
   flex-direction: column;
   justify-content: center;
 }
-.imgIndex {
-  grid-area: imgIndex;
-  width: 100%;
-}
-.encabezado {
-  grid-area: encabezado;
-  width: 100%;
-}
-.textoEncabezado {
-  grid-area: textoEncabezado;
+.imgIndex, .encabezado, .textoEncabezado {
+  grid-area: imgIndex encabezado textoEncabezado;
   width: 100%;
 }
 

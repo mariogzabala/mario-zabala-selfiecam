@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SelfieCam PhotoBooth</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7057b9680e.js" crossorigin="anonymous"></script>
 </head>
 <body class="indexContainer">
@@ -41,7 +42,7 @@
             <h2>Si estas planeando un evento único, que el recuerdo te dure toda la vida!!</h2><br>
             <h3>Contactanos ya mismo y reserva tu fecha</h3>
         </div> 
-        <button class="button">
+        <button data-aos="fade-up" class="button">
             <a href="views/contact.html">Pedi tu presupuesto ahora</a>
         </button>
     </main>            
@@ -56,5 +57,12 @@
 			<p>SelfieCam Photobooth &copy; 2022</p>
 		</div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
 </body>
 </html>
