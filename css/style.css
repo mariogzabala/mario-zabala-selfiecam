@@ -171,7 +171,7 @@ footer .footerIcons a {
   "button button"
   "footer footer";
   width: 100%;
-  padding-left: 5%;
+  padding-left: 3%;
   overflow: hidden;
   
 }
@@ -182,7 +182,7 @@ footer .footerIcons a {
 }
 .imgAbout {
   grid-area: imgAbout;
-  width: 100%;
+  width: 100%;  
   display: flex;
   justify-content: flex-end;
 }
@@ -191,13 +191,12 @@ footer .footerIcons a {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-right: 8%;
-  overflow: hidden;
+  padding-right: 5%;  
 }
 .descriptionAbout {
   grid-area: descriptionAbout;
   width: 100%;
-  padding: 20% 0% 8% 8%;
+  padding: 20% 8% 8% 5%;
 }
 .videoAbout {
   grid-area: videoAbout;
