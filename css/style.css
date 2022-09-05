@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;    
   box-sizing: border-box;
-  font-family: 'Manjari', sans-serif;   
+  font-family: 'Manjari', sans-serif; 
 }
 
 /* BODY */
@@ -37,7 +37,9 @@ ul {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 5%   
+  gap: 5%; 
+  margin: 0%;
+  padding: 0%;  
 }
 nav {
   width: 100%;
@@ -60,6 +62,14 @@ header {
   padding: 3% 5%;
   font-size: 18px;  
 }
+.navbar-expand-lg .navbar-collapse {
+  flex-basis: auto;
+  justify-content: flex-end;
+}
+body{
+  overflow-x: auto;
+}
+
 
 /*FOOTER*/
 footer {
@@ -74,6 +84,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2%;  
+
 }
 footer .footerIcons a {
   width: 25px;
@@ -125,37 +136,49 @@ footer .footerIcons a {
 .mainIndex {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(4/auto);
+  grid-template-rows: repeat(6/auto);
   grid-template-areas:
   "imgIndex imgIndex"
   "encabezado encabezado"
   "textoEncabezado textoEncabezado"
+  "carousel carousel"
+  "subtitulos subtitulos"
   "button button";
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.imgIndex, .encabezado, .textoEncabezado {
-  grid-area: imgIndex encabezado textoEncabezado;
+.imgIndex, .encabezado, .textoEncabezado, .subtitulos {
+  grid-area: imgIndex encabezado textoEncabezado subtitulos;
   width: 100%;
+}
+.carousel {
+  width: 100%;
+  padding: 3% 10%; 
 }
 
 /* GRID-ABOUT */
 .mainAbout {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(4/auto);
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
+  "header header"
   "encabezadoAbout encabezadoAbout"
   "imgAbout textoAbout"
   "descriptionAbout videoAbout"
-  "button button";
-  width: 100%;  
+  "button button"
+  "footer footer";
+  width: 100%;
+  padding-left: 5%;
+  overflow: hidden;
+  
 }
 .encabezadoAbout {
   grid-area: encabezadoAbout;
   width: 100%;
+  overflow: hidden;
 }
 .imgAbout {
   grid-area: imgAbout;
@@ -166,7 +189,10 @@ footer .footerIcons a {
 .textoAbout {
   grid-area: textoAbout;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
   padding-right: 8%;
+  overflow: hidden;
 }
 .descriptionAbout {
   grid-area: descriptionAbout;
@@ -176,8 +202,6 @@ footer .footerIcons a {
 .videoAbout {
   grid-area: videoAbout;
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
   padding-bottom: 8%;
 }
 
@@ -185,12 +209,13 @@ footer .footerIcons a {
 .mainService {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(5/auto);
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas: 
   "encabezadoService encabezadoService"
   "textoEncabezadoService textoEncabezadoService"
   "imgEspejoService textoEspejoService"
   "imgTotemService textoTotemService"
+  "img360Service texto360Service"
   "button button";
 }
 .encabezadoService {
@@ -214,12 +239,22 @@ footer .footerIcons a {
 .imgTotemService {
   grid-area: imgTotemService;
   width: 100%;
-  padding: 10% 0% 5% 10%;
+  padding: 7% 0% 0% 10%;
 }
 .textoTotemService {
   grid-area: textoTotemService;
   width: 100%;
-  padding: 10% 5% 5% 0%;
+  padding: 7% 5% 0% 0%;
+}
+.img360Service {
+  grid-area: img360Service;
+  width: 100%;
+  padding: 7% 0% 5% 10%;
+}
+.texto360Service {
+  grid-area: texto360Service;
+  width: 100%;
+  padding: 7% 5% 5% 0%;
 }
 
 /*GRID-PACKAGES*/
@@ -293,18 +328,41 @@ article h3 {
     display: flex;
     flex-direction: column;
   }
+  .navbar {  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+    align-content: center;
+}
+  .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  }
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
   .logo {
     width: 80%;
     display: flex;
     text-align: center;
     margin: 5% 0%    
   }
+  .logo a img {
+    width: 70%;
+}
   ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    line-height: 26px
+    line-height: 26px;
+    
   }
   h1 {
     font-size: 30px;
@@ -341,6 +399,9 @@ article h3 {
     font-size: 15px;
     text-align: center;
   }
+  .carousel {
+    padding: 3% 0%;
+  }
 
   /* ABOUT */
   .mainAbout {
@@ -355,6 +416,10 @@ article h3 {
     "descriptionAbout"
     "button";
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+    overflow: hidden;  
   }
   .videoAbout {
     width: 100%;
@@ -387,17 +452,25 @@ article h3 {
     "imgEspejoService"
     "textoEspejoService"
     "imgTotemService"
-    "textoTotemService";
+    "textoTotemService"
+    "img360Service"
+    "texto360Service";
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 100%;
+    overflow: hidden;
+  
   }
   .imgEspejoService, 
   .textoEspejoService,
   .imgTotemService, 
-  .textoTotemService{
+  .textoTotemService,
+  .img360Service,
+  .texto360Service{
     width: 100%;
-    padding: 5% 0% 5% 0%;
+    padding: 5% 0%;
+  
   }
 
   /* PACKAGES */
@@ -416,25 +489,13 @@ article h3 {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  section article.format{
-    grid-area: format;
-    width: 100%;
-    margin-bottom: 5%;
-  }
-  section article.prints{
-    grid-area: prints;
-    width: 100%;
-    margin-bottom: 5%;
-  }
-  section article.confeti{
-    grid-area: confeti;
-    width: 100%;
-    margin-bottom: 5%;
-  }
+  section article.format, 
+  section article.prints, 
+  section article.confeti, 
   section article.design{
-    grid-area: design;
+    grid-area: format prints confeti design;
     width: 100%;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
   }
 
   /* CONTACT */
