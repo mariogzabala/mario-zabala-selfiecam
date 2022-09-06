@@ -127,18 +127,16 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(6/auto);
-  grid-template-areas: "header header"  "encabezadoAbout encabezadoAbout"  "imgAbout textoAbout"  "descriptionAbout videoAbout"  "button button"  "footer footer";
+  grid-template-areas: "header header" 
+ "encabezadoAbout encabezadoAbout" 
+ "imgAbout textoAbout" 
+ "descriptionAbout videoAbout" 
+ "button button" 
+ "footer footer";
   width: 100%;
-<<<<<<< HEAD
-  padding-left: 3%;
-  overflow: hidden;
-  
-}
-=======
   padding-left: 5%;
   overflow: hidden; }
 
->>>>>>> desarrollo
 .encabezadoAbout {
   grid-area: encabezadoAbout;
   width: 100%; }
@@ -154,15 +152,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-<<<<<<< HEAD
-  padding-right: 5%;  
-}
-.descriptionAbout {
-  grid-area: descriptionAbout;
-  width: 100%;
-  padding: 20% 8% 8% 5%;
-}
-=======
   padding-right: 8%; }
 
 .descriptionAbout {
@@ -170,7 +159,6 @@ footer {
   width: 100%;
   padding: 20% 0% 8% 8%; }
 
->>>>>>> desarrollo
 .videoAbout {
   grid-area: videoAbout;
   width: 100%;
@@ -209,7 +197,12 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(6/auto);
-  grid-template-areas: "encabezadoService encabezadoService"  "textoEncabezadoService textoEncabezadoService"  "imgEspejoService textoEspejoService"  "imgTotemService textoTotemService"  "img360Service texto360Service"  "button button"; }
+  grid-template-areas: "encabezadoService encabezadoService" 
+ "textoEncabezadoService textoEncabezadoService" 
+ "imgEspejoService textoEspejoService" 
+ "imgTotemService textoTotemService" 
+ "img360Service texto360Service" 
+ "button button"; }
 
 .encabezadoService {
   grid-area: encabezadoService;
@@ -337,7 +330,9 @@ article h3 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3/auto);
-  grid-template-areas: "encabezadoContact"  "contactForm"  "button"; }
+  grid-template-areas: "encabezadoContact" 
+ "contactForm" 
+ "button"; }
 
 .contactForm {
   text-align: center;
@@ -367,7 +362,12 @@ article h3 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(6/auto);
-  grid-template-areas: "imgIndex imgIndex"  "encabezado encabezado"  "textoEncabezado textoEncabezado"  "carousel carousel"  "subtitulos subtitulos"  "button button";
+  grid-template-areas: "imgIndex imgIndex" 
+ "encabezado encabezado" 
+ "textoEncabezado textoEncabezado" 
+ "carousel carousel" 
+ "subtitulos subtitulos" 
+ "button button";
   width: 100%;
   display: flex;
   flex-direction: column;
