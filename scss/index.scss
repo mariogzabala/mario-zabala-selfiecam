@@ -1,0 +1,44 @@
+.mainIndex {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(6/auto);
+	grid-template-areas: 
+    "imgIndex imgIndex" 
+    "encabezado encabezado" 
+    "textoEncabezado textoEncabezado" 
+    "carousel carousel" 
+    "subtitulos subtitulos" 
+    "button button";
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.imgIndex {
+	grid-area: imgIndex;
+	width: 100%;
+}
+.encabezado {
+	grid-area: encabezado;
+	width: 100%;
+}
+.textoEncabezado {
+	grid-area: textoEncabezado;
+	width: 100%;
+}
+.subtitulos {
+	grid-area: subtitulos;
+	width: 100%;
+}
+.carousel {
+	width: 100%;
+	padding: 3% 10%;
+}
+
+@media (max-width: 768px) {
+	
+	.carousel {
+		padding: 3% 0%;
+	}
+}
+

@@ -1,0 +1,88 @@
+.mainService {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(6/auto);
+	grid-template-areas: 
+    "encabezadoService encabezadoService" 
+    "textoEncabezadoService textoEncabezadoService" 
+    "imgEspejoService textoEspejoService" 
+    "imgTotemService textoTotemService" 
+    "img360Service texto360Service" 
+    "button button";
+}
+.encabezadoService {
+	grid-area: encabezadoService;
+	width: 100%;
+}
+.textoEncabezadoService {
+	grid-area: textoEncabezadoService;
+	width: 100%;
+}
+.imgEspejoService {
+	grid-area: imgEspejoService;
+	width: 100%;
+	padding: 10% 0% 0% 10%;
+}
+.textoEspejoService {
+	grid-area: textoEspejoService;
+	width: 100%;
+	padding: 10% 5% 0% 0%;
+}
+.imgTotemService {
+	grid-area: imgTotemService;
+	width: 100%;
+	padding: 7% 0% 0% 10%;
+}
+.textoTotemService {
+	grid-area: textoTotemService;
+	width: 100%;
+	padding: 7% 5% 0% 0%;
+}
+.img360Service {
+	grid-area: img360Service;
+	width: 100%;
+	padding: 7% 0% 5% 10%;
+}
+.texto360Service {
+	grid-area: texto360Service;
+	width: 100%;
+	padding: 7% 5% 5% 0%;
+}
+
+@media (max-width: 768px) {	
+	.mainService {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: "imgEspejoService" "textoEspejoService" "imgTotemService" "textoTotemService" "img360Service" "texto360Service";
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 100%;
+		overflow: hidden;
+	}
+	.imgEspejoService {
+		width: 100%;
+		padding: 5% 0%;
+	}
+	.textoEspejoService {
+		width: 100%;
+		padding: 5% 0%;
+	}
+	.imgTotemService {
+		width: 100%;
+		padding: 5% 0%;
+	}
+	.textoTotemService {
+		width: 100%;
+		padding: 5% 0%;
+	}
+	.img360Service {
+		width: 100%;
+		padding: 5% 0%;
+	}
+	.texto360Service {
+		width: 100%;
+		padding: 5% 0%;
+	}
+}

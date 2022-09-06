@@ -1,57 +1,27 @@
-* {
-  margin: 0px;
-  padding: 0px;    
-  box-sizing: border-box;
-  font-family: 'Manjari', sans-serif; 
-}
-
-/* BODY */
-h1 {
-  text-align: center;
-  padding: 3% 0% 2% 0%;
-  font-size: 50px;
-}
-h2 {
-  text-align: center;
-  margin-bottom: 2%;    
-}
-h3 {
-  text-align: center;
-  font-weight: bold;
-  line-height: 30px; 
-  margin-bottom: 2%;   
-}
-p {
-  text-align: justify;
-  padding: 0% 5%;
-  font-size: 22px;
-}
-
-/* HEADER */
 li {
   text-decoration: none;
   color: white;
-  list-style-type: none;
-}
+  list-style-type: none; }
+
 ul {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 5%; 
+  gap: 5%;
   margin: 0%;
-  padding: 0%;  
-}
+  padding: 0%; }
+
 nav {
-  width: 100%;
-}
+  width: 100%; }
+
 a {
   text-decoration: none;
   color: white;
-  list-style-type: none;  
-}
+  list-style-type: none; }
+
 .logo a img {
-  width: 50%;  
-}
+  width: 50%; }
+
 header {
   grid-area: header;
   display: flex;
@@ -60,18 +30,49 @@ header {
   width: 100%;
   text-align: left;
   padding: 3% 5%;
-  font-size: 18px;  
-}
+  font-size: 18px; }
+
 .navbar-expand-lg .navbar-collapse {
   flex-basis: auto;
-  justify-content: flex-end;
-}
-body{
-  overflow-x: auto;
-}
+  justify-content: flex-end; }
 
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+    align-content: center; }
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center; }
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start; }
+  .logo {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: 5% 0%; }
+    .logo a img {
+      width: 70%; }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 26px; }
+  img {
+    width: 100%; } }
 
-/*FOOTER*/
 footer {
   grid-area: footer;
   display: flex;
@@ -83,426 +84,353 @@ footer {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 2%;  
+  margin-top: 2%; }
+  footer .footerIcons a {
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 35px;
+    color: grey;
+    line-height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px; }
 
-}
-footer .footerIcons a {
-  width: 25px;
-  height: 25px; 
-  border-radius: 2px;
-  font-size: 35px;
-  color: grey;
-  line-height: 35px;  
-  text-align: center;  
-  line-height: 35px;
-  margin-left: 3px; 
-}
 .footerContact {
-  margin-top: 0%;
-}
+  margin-top: 0%; }
+
 .copyright p {
   color: white;
   font-size: 18px;
-  padding: 0%;
-}
+  padding: 0%; }
 
-/* ANIMACIONES ICONOS FOOTER */
 .fa-brands:hover {
-  transform:scale(1.1); 
-  transition:all .25s;  
-}
+  transform: scale(1.1);
+  transition: all .25s; }
 
-/* BUTTON */
-.button {
-  grid-area: button;
-  display: flex;
-  margin-left: 40%;
-  justify-content: center;
-  width: 20%; 
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 1.5% 0%;
-  font-size: 18px; 
-}
+@media (max-width: 768px) {
+  .footerIcons {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0%; }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .copyright p {
+    width: 100%;
+    font-size: 15px;
+    text-align: center; } }
 
-/* ANIMACION BUTTON */
-.button:hover {
-  transform:scale(1.1);
-  transition:all .25s;
-}
-
-/* GRID-INDEX */
-.mainIndex {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(6/auto);
-  grid-template-areas:
-  "imgIndex imgIndex"
-  "encabezado encabezado"
-  "textoEncabezado textoEncabezado"
-  "carousel carousel"
-  "subtitulos subtitulos"
-  "button button";
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.imgIndex, .encabezado, .textoEncabezado, .subtitulos {
-  grid-area: imgIndex encabezado textoEncabezado subtitulos;
-  width: 100%;
-}
-.carousel {
-  width: 100%;
-  padding: 3% 10%; 
-}
-
-/* GRID-ABOUT */
 .mainAbout {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas:
-  "header header"
-  "encabezadoAbout encabezadoAbout"
-  "imgAbout textoAbout"
-  "descriptionAbout videoAbout"
-  "button button"
-  "footer footer";
+  grid-template-rows: repeat(6/auto);
+  grid-template-areas: "header header"  "encabezadoAbout encabezadoAbout"  "imgAbout textoAbout"  "descriptionAbout videoAbout"  "button button"  "footer footer";
   width: 100%;
   padding-left: 5%;
-  overflow: hidden;
-  
-}
+  overflow: hidden; }
+
 .encabezadoAbout {
   grid-area: encabezadoAbout;
-  width: 100%;
-  overflow: hidden;
-}
+  width: 100%; }
+
 .imgAbout {
   grid-area: imgAbout;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
+
 .textoAbout {
   grid-area: textoAbout;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-right: 8%;
-  overflow: hidden;
-}
+  padding-right: 8%; }
+
 .descriptionAbout {
   grid-area: descriptionAbout;
   width: 100%;
-  padding: 20% 0% 8% 8%;
-}
+  padding: 20% 0% 8% 8%; }
+
 .videoAbout {
   grid-area: videoAbout;
   width: 100%;
-  padding-bottom: 8%;
-}
+  padding-bottom: 8%; }
 
-/*GRID-SERVICES*/
-.mainService {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: 
-  "encabezadoService encabezadoService"
-  "textoEncabezadoService textoEncabezadoService"
-  "imgEspejoService textoEspejoService"
-  "imgTotemService textoTotemService"
-  "img360Service texto360Service"
-  "button button";
-}
-.encabezadoService {
-  grid-area: encabezadoService;
-  width: 100%;
-}
-.textoEncabezadoService {
-  grid-area: textoEncabezadoService;
-  width: 100%;
-}
-.imgEspejoService {
-  grid-area: imgEspejoService;
-  width: 100%;
-  padding: 10% 0% 0% 10%;
-}
-.textoEspejoService {
-  grid-area: textoEspejoService;
-  width: 100%;
-  padding: 10% 5% 0% 0%;
-}
-.imgTotemService {
-  grid-area: imgTotemService;
-  width: 100%;
-  padding: 7% 0% 0% 10%;
-}
-.textoTotemService {
-  grid-area: textoTotemService;
-  width: 100%;
-  padding: 7% 5% 0% 0%;
-}
-.img360Service {
-  grid-area: img360Service;
-  width: 100%;
-  padding: 7% 0% 5% 10%;
-}
-.texto360Service {
-  grid-area: texto360Service;
-  width: 100%;
-  padding: 7% 5% 5% 0%;
-}
-
-/*GRID-PACKAGES*/
-.mainPackage {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-  "packageEncabezado packageEncabezado"
-  "format prints"
-  "confeti design";
-  width: 100%;
-  justify-items: center; 
-}
-.packageEncabezado {
-  grid-area: packageEncabezado;
-  width: 100%;}
-
-.format, .prints, .confeti, .design {
-  grid-area: format prints confeti design;
-  width:70%;    
-}
-article img {
-  width: 100%;
-  padding-bottom: 5%;
-}
-article h3 {
-  font-size: 21px;
-  text-transform: uppercase;  
-}
-.confeti,.design {
-  margin-top: 4%;
-}
-
-/* GRID-CONTACT */
-.mainContact {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3/auto);
-  grid-template-areas: 
-  "encabezadoContact"
-  "contactForm"
-  "button";  
-}
-.contactForm {
-  text-align: center;
-  padding-top: 3%;  
-  background-color: lightgray;
-  border-bottom: 20px solid lightgray;
-}
-.form {
-  width: 50%;
-  padding: 15px;
-  background:#f8f8f8;
-  border:1px solid rgba(0, 0, 0, 0.075);
-  margin-bottom:25px;
-  color:#727272 !important;
-  font-size:13px;  
-}
-.textarea {
-  height: 200px;
-  width: 50%;  
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 768px){
-  
-  /* HEADER Y FOOTER */
-  header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar {  
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    flex-direction: column;
-    align-content: center;
-}
-  .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-  text-align: center;
-  }
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-  .logo {
-    width: 80%;
-    display: flex;
-    text-align: center;
-    margin: 5% 0%    
-  }
-  .logo a img {
-    width: 70%;
-}
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 26px;
-    
-  }
-  h1 {
-    font-size: 30px;
-    margin: 5% 0%;
-  }
-  h2 {
-    width: 100%;  
-    padding: 0% 3%;
-  }
-  h3 {
-    padding: 0% 3%;
-  }
-  img {
-    width: 100%;
-  }
-  .button {
-    width: 40%; 
-    font-size: 15px;
-    margin: 5% 30% 5% 30%;
-  }
-  .footerIcons {
-    width: 100%;
-    text-align: center;
-    margin: 5% 0%;
-  }
-  footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-  }
-  .copyright p {
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-  }
-  .carousel {
-    padding: 3% 0%;
-  }
-
-  /* ABOUT */
+@media (max-width: 768px) {
   .mainAbout {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "encabezadoAbout"
-    "imgAbout"
-    "textoAbout"
-    "videoAbout"
-    "descriptionAbout"
-    "button";
+    grid-template-areas: "encabezadoAbout" "imgAbout" "textoAbout" "videoAbout" "descriptionAbout" "button";
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 0%;
-    overflow: hidden;  
-  }
+    overflow: hidden; }
   .videoAbout {
     width: 100%;
     display: flex;
-    justify-content: center;
-  }
+    justify-content: center; }
   .textoAbout {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 10% 0%;
-    padding:0%
-  }
+    padding: 0%; }
   .descriptionAbout {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0%
-  }
-  .descriptionAbout p {
-    text-align: center;
-  }
-  
-  /* SERVICES */
+    padding: 0%; }
+    .descriptionAbout p {
+      text-align: center; } }
+
+.mainService {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(6/auto);
+  grid-template-areas: "encabezadoService encabezadoService"  "textoEncabezadoService textoEncabezadoService"  "imgEspejoService textoEspejoService"  "imgTotemService textoTotemService"  "img360Service texto360Service"  "button button"; }
+
+.encabezadoService {
+  grid-area: encabezadoService;
+  width: 100%; }
+
+.textoEncabezadoService {
+  grid-area: textoEncabezadoService;
+  width: 100%; }
+
+.imgEspejoService {
+  grid-area: imgEspejoService;
+  width: 100%;
+  padding: 10% 0% 0% 10%; }
+
+.textoEspejoService {
+  grid-area: textoEspejoService;
+  width: 100%;
+  padding: 10% 5% 0% 0%; }
+
+.imgTotemService {
+  grid-area: imgTotemService;
+  width: 100%;
+  padding: 7% 0% 0% 10%; }
+
+.textoTotemService {
+  grid-area: textoTotemService;
+  width: 100%;
+  padding: 7% 5% 0% 0%; }
+
+.img360Service {
+  grid-area: img360Service;
+  width: 100%;
+  padding: 7% 0% 5% 10%; }
+
+.texto360Service {
+  grid-area: texto360Service;
+  width: 100%;
+  padding: 7% 5% 5% 0%; }
+
+@media (max-width: 768px) {
   .mainService {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "imgEspejoService"
-    "textoEspejoService"
-    "imgTotemService"
-    "textoTotemService"
-    "img360Service"
-    "texto360Service";
+    grid-template-areas: "imgEspejoService" "textoEspejoService" "imgTotemService" "textoTotemService" "img360Service" "texto360Service";
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
-    overflow: hidden;
-  
-  }
-  .imgEspejoService, 
-  .textoEspejoService,
-  .imgTotemService, 
-  .textoTotemService,
-  .img360Service,
-  .texto360Service{
+    overflow: hidden; }
+  .imgEspejoService {
     width: 100%;
-    padding: 5% 0%;
-  
-  }
+    padding: 5% 0%; }
+  .textoEspejoService {
+    width: 100%;
+    padding: 5% 0%; }
+  .imgTotemService {
+    width: 100%;
+    padding: 5% 0%; }
+  .textoTotemService {
+    width: 100%;
+    padding: 5% 0%; }
+  .img360Service {
+    width: 100%;
+    padding: 5% 0%; }
+  .texto360Service {
+    width: 100%;
+    padding: 5% 0%; } }
 
-  /* PACKAGES */
-  .mainPackage{
+.mainPackage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "packageEncabezado packageEncabezado" "format prints" "confeti design";
+  width: 100%;
+  justify-items: center; }
+
+.packageEncabezado {
+  grid-area: packageEncabezado;
+  width: 100%; }
+
+.format, .prints, .confeti, .design {
+  grid-area: format prints confeti design;
+  width: 70%; }
+
+article img {
+  width: 100%;
+  padding-bottom: 5%; }
+
+article h3 {
+  font-size: 21px;
+  text-transform: uppercase; }
+
+.confeti, .design {
+  margin-top: 4%; }
+
+@media (max-width: 768px) {
+  .mainPackage {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas:
-    "encabezadoService"
-    "textoEncabezadoService"
-    "imgEspejoService"
-    "imgTotemService"
-    "button";
+    grid-template-areas: "encabezadoService" "textoEncabezadoService" "imgEspejoService" "imgTotemService" "button";
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  section article.format, 
-  section article.prints, 
-  section article.confeti, 
-  section article.design{
+    flex-wrap: nowrap; }
+  section article.format {
     grid-area: format prints confeti design;
     width: 100%;
-    margin-bottom: 5%;
-  }
+    margin-bottom: 5%; }
+  section article.prints {
+    grid-area: format prints confeti design;
+    width: 100%;
+    margin-bottom: 5%; }
+  section article.confeti {
+    grid-area: format prints confeti design;
+    width: 100%;
+    margin-bottom: 5%; }
+  section article.design {
+    grid-area: format prints confeti design;
+    width: 100%;
+    margin-bottom: 5%; } }
 
-  /* CONTACT */
-  .contactForm{
-    width: 100%;  
-  }
-  .form{
-    width: 90%; 
-  }
-}
+.mainContact {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: "encabezadoContact"  "contactForm"  "button"; }
+
+.contactForm {
+  text-align: center;
+  padding-top: 3%;
+  background-color: lightgray;
+  border-bottom: 20px solid lightgray; }
+
+.form {
+  width: 50%;
+  padding: 15px;
+  background: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 25px;
+  font-size: 13px; }
+
+.textarea {
+  height: 200px;
+  width: 50%; }
+
+@media (max-width: 768px) {
+  .contactForm {
+    width: 100%; }
+  .form {
+    width: 90%; } }
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6/auto);
+  grid-template-areas: "imgIndex imgIndex"  "encabezado encabezado"  "textoEncabezado textoEncabezado"  "carousel carousel"  "subtitulos subtitulos"  "button button";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.imgIndex {
+  grid-area: imgIndex;
+  width: 100%; }
+
+.encabezado {
+  grid-area: encabezado;
+  width: 100%; }
+
+.textoEncabezado {
+  grid-area: textoEncabezado;
+  width: 100%; }
+
+.subtitulos {
+  grid-area: subtitulos;
+  width: 100%; }
+
+.carousel {
+  width: 100%;
+  padding: 3% 10%; }
+
+@media (max-width: 768px) {
+  .carousel {
+    padding: 3% 0%; } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Manjari', sans-serif; }
+
+h1 {
+  text-align: center;
+  padding: 3% 0% 2% 0%;
+  font-size: 50px; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 2%; }
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 2%; }
+
+p {
+  text-align: justify;
+  padding: 0% 5%;
+  font-size: 22px; }
+
+.button {
+  grid-area: button;
+  display: flex;
+  margin-left: 40%;
+  justify-content: center;
+  width: 20%;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 1.5% 0%;
+  font-size: 18px; }
+  .button:hover {
+    transform: scale(1.1);
+    transition: all .25s; }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    margin: 5% 0%; }
+  h2 {
+    width: 100%;
+    padding: 0% 3%; }
+  h3 {
+    padding: 0% 3%; }
+  .button {
+    width: 40%;
+    font-size: 15px;
+    margin: 5% 30% 5% 30%; } }
