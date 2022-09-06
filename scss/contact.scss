@@ -1,0 +1,39 @@
+.mainContact {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3/auto);
+	grid-template-areas: 
+	"encabezadoContact" 
+	"contactForm" 
+	"button";
+}
+.contactForm {
+	text-align: center;
+	padding-top: 3%;
+	background-color: $contactFormColor;
+	border-bottom: 20px solid $contactFormColor;
+}
+.form {
+	width: 50%;
+	padding: 15px;
+	background: $formColor;
+	border: 1px solid $borderFormColor;
+	margin-bottom: 25px;
+	
+	font-size: 13px;
+}
+.textarea {
+	height: 200px;
+	width: 50%;
+}
+
+@media (max-width: 768px) {	
+	.contactForm {
+	width: 100%;
+	}
+	.form {
+		width: 90%;
+	}
+}
+
+

@@ -1,0 +1,78 @@
+.mainAbout {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(6/auto);
+	grid-template-areas: 
+    "header header" 
+    "encabezadoAbout encabezadoAbout" 
+    "imgAbout textoAbout" 
+    "descriptionAbout videoAbout" 
+    "button button" 
+    "footer footer";
+	width: 100%;
+	padding-left: 5%;
+	overflow: hidden;
+}
+.encabezadoAbout {
+	grid-area: encabezadoAbout;
+	width: 100%;	
+}
+.imgAbout {
+	grid-area: imgAbout;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.textoAbout {
+	grid-area: textoAbout;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding-right: 8%;	
+}
+.descriptionAbout {
+	grid-area: descriptionAbout;
+	width: 100%;
+	padding: 20% 0% 8% 8%;
+}
+.videoAbout {
+	grid-area: videoAbout;
+	width: 100%;
+	padding-bottom: 8%;
+}
+
+@media (max-width: 768px) {
+	.mainAbout {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: "encabezadoAbout" "imgAbout" "textoAbout" "videoAbout" "descriptionAbout" "button";
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-left: 0%;
+		overflow: hidden;
+	}
+	.videoAbout {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.textoAbout {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 10% 0%;
+		padding: 0%;
+	}
+	.descriptionAbout {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 0%;
+		p {
+			text-align: center;
+		}
+	}
+}
+
