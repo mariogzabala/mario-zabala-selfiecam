@@ -1,8 +1,4 @@
-li {
-	text-decoration: none;
-	color: $liColor;
-	list-style-type: none;
-}
+
 ul {
 	display: flex;
 	justify-content: flex-end;
@@ -23,7 +19,12 @@ a {
 	a {
 		img {
 			width: 50%;
+			&:hover {
+				transform: scale(1.1);
+				transition: all .25s;
+			}
 		}
+		
 	}
 }
 header {

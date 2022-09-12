@@ -2,13 +2,7 @@
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: repeat(6/auto);
-	grid-template-areas: 
-    "imgIndex imgIndex" 
-    "encabezado encabezado" 
-    "textoEncabezado textoEncabezado" 
-    "carousel carousel" 
-    "subtitulos subtitulos" 
-    "button button";
+	grid-template-areas: "imgIndex imgIndex" "encabezado encabezado" "textoEncabezado textoEncabezado" "carousel carousel" "subtitulos subtitulos" "button button";
 	width: 100%;
 	display: flex;
 	flex-direction: column;

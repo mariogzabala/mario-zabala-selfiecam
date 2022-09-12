@@ -2,10 +2,7 @@
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: repeat(3/auto);
-	grid-template-areas: 
-	"encabezadoContact" 
-	"contactForm" 
-	"button";
+	grid-template-areas: "encabezadoContact" "contactForm" "button";
 }
 .contactForm {
 	text-align: center;

@@ -1,4 +1,21 @@
 
+// MIXIN
+@mixin footerIcons($hover) {
+	width: 25px;
+	height: 25px;
+	border-radius: 2px;
+	font-size: 35px;
+	color: $footerIconsColor;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 10px;
+	&:hover {
+		color: $hover;
+		transform: scale(1.1);
+		transition: all .25s;
+	}	
+}
+
 footer {
 	grid-area: footer;
 	display: flex;
@@ -11,18 +28,18 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 2%;
-	.footerIcons {
-		a {
-			width: 25px;
-			height: 25px;
-			border-radius: 2px;
-			font-size: 35px;
-			color: $footerIconsColor;
-			line-height: 35px;
-			text-align: center;
-			line-height: 35px;
-			margin-left: 3px;
-		}
+	
+	.fa-square-facebook {
+		@include footerIcons($fb)	
+	}
+	.fa-square-instagram {
+		@include footerIcons($insta)	
+	}
+	.fa-square-youtube {
+		@include footerIcons($yt)	
+	}
+	.fa-square-whatsapp {
+		@include footerIcons($wp)	
 	}
 }
 .footerContact {
@@ -35,12 +52,7 @@ footer {
 		padding: 0%;
 	}
 }
-.fa-brands {
-	&:hover {
-		transform: scale(1.1);
-		transition: all .25s;
-	}
-}
+
 
 @media (max-width: 768px) {
 	.footerIcons {

@@ -44,22 +44,7 @@ article {
 		flex-wrap: nowrap;
 	}
 	section {
-		article.format {
-			grid-area: format prints confeti design;
-			width: 100%;
-			margin-bottom: 5%;
-		}
-		article.prints {
-			grid-area: format prints confeti design;
-			width: 100%;
-			margin-bottom: 5%;
-		}
-		article.confeti {
-			grid-area: format prints confeti design;
-			width: 100%;
-			margin-bottom: 5%;
-		}
-		article.design {
+		article.format, article.prints, article.confeti, article.design {
 			grid-area: format prints confeti design;
 			width: 100%;
 			margin-bottom: 5%;
