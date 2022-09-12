@@ -2,13 +2,7 @@
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(6/auto);
-	grid-template-areas: 
-    "header header" 
-    "encabezadoAbout encabezadoAbout" 
-    "imgAbout textoAbout" 
-    "descriptionAbout videoAbout" 
-    "button button" 
-    "footer footer";
+	grid-template-areas: "header header" "encabezadoAbout encabezadoAbout" "imgAbout textoAbout" "descriptionAbout videoAbout" "button button" "footer footer";
 	width: 100%;
 	padding-left: 5%;
 	overflow: hidden;

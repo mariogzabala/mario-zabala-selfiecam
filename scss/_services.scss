@@ -2,13 +2,7 @@
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(6/auto);
-	grid-template-areas: 
-    "encabezadoService encabezadoService" 
-    "textoEncabezadoService textoEncabezadoService" 
-    "imgEspejoService textoEspejoService" 
-    "imgTotemService textoTotemService" 
-    "img360Service texto360Service" 
-    "button button";
+	grid-template-areas: "encabezadoService encabezadoService" "textoEncabezadoService textoEncabezadoService" "imgEspejoService textoEspejoService" "imgTotemService textoTotemService" "img360Service texto360Service" "button button";
 }
 .encabezadoService {
 	grid-area: encabezadoService;
@@ -61,28 +55,8 @@
 		width: 100%;
 		overflow: hidden;
 	}
-	.imgEspejoService {
+	.imgEspejoService, .textoEspejoService, .imgTotemService, .textoTotemService, .img360Service, .texto360Service {
 		width: 100%;
 		padding: 5% 0%;
-	}
-	.textoEspejoService {
-		width: 100%;
-		padding: 5% 0%;
-	}
-	.imgTotemService {
-		width: 100%;
-		padding: 5% 0%;
-	}
-	.textoTotemService {
-		width: 100%;
-		padding: 5% 0%;
-	}
-	.img360Service {
-		width: 100%;
-		padding: 5% 0%;
-	}
-	.texto360Service {
-		width: 100%;
-		padding: 5% 0%;
-	}
+	}	
 }
