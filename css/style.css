@@ -430,6 +430,22 @@ p {
     transform: scale(1.1);
     transition: all .25s; }
 
+.whatsapp {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 100px;
+  right: 60px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  z-index: 100; }
+
+.whatsapp-icon {
+  margin-top: 14px; }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 30px;
@@ -442,4 +458,12 @@ p {
   .button {
     width: 40%;
     font-size: 15px;
-    margin: 5% 30% 5% 30%; } }
+    margin: 5% 30% 5% 30%; }
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 20px;
+    font-size: 30px; }
+  .whatsapp-icon {
+    margin-top: 9px; } }
