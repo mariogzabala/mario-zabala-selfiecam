@@ -403,7 +403,7 @@ footer {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Montserrat"; }
+  font-family: "Montserrat", sans-serif; }
 
 .align, h1, h2, h3 {
   text-align: center; }

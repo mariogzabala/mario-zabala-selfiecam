@@ -12,7 +12,7 @@ $estlioGeneral:(
 	margen: 0px,
 	padding: 0px,
 	boxSizing: border-box,
-	fuente: ('Montserrat')	
+	fuente: ('Montserrat', sans-serif)	
 );
 * {
 	margin: map-get($estlioGeneral, margen);
@@ -28,7 +28,7 @@ $estlioGeneral:(
 h1 {	
 	@extend .align;
 	padding: 3% 0% 2% 0%;
-	font-size:50px;	
+	font-size: 50px;	
 }
 h2 {
 	@extend .align;
