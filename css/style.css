@@ -27,7 +27,7 @@ header {
   background-color: #292c2f;
   width: 100%;
   text-align: left;
-  padding: 3% 5%;
+  padding: 2% 5%;
   font-size: 18px; }
 
 .navbar-expand-lg .navbar-collapse {
@@ -283,47 +283,57 @@ footer {
     width: 100%;
     padding: 5% 0%; } }
 
-.mainPackage {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "packageEncabezado packageEncabezado" "format prints" "confeti design";
+.page-section {
+  padding: 1rem 3rem;
+  overflow: hidden; }
+
+.container {
   width: 100%;
-  justify-items: center; }
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto; }
 
-.packageEncabezado {
-  grid-area: packageEncabezado;
-  width: 100%; }
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x)); }
 
-.format, .prints, .confeti, .design {
-  grid-area: format prints confeti design;
-  width: 70%; }
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%; }
 
-article img {
-  width: 100%;
-  padding-bottom: 5%; }
+.pack {
+  margin-bottom: 3rem;
+  text-align: center; }
+  .pack img {
+    width: 21rem;
+    height: 21rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1); }
+  .pack h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0; }
 
-article h3 {
-  font-size: 21px;
-  text-transform: uppercase; }
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important; }
 
-.confeti, .design {
-  margin-top: 4%; }
+.rounded-circle {
+  border-radius: 50% !important; }
 
 @media (max-width: 768px) {
-  .mainPackage {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas: "encabezadoService" "textoEncabezadoService" "imgEspejoService" "imgTotemService" "button";
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; }
-  section article.format, section article.prints, section article.confeti, section article.design {
-    grid-area: format prints confeti design;
-    width: 100%;
-    margin-bottom: 5%; } }
+  .col-md-12 {
+    width: 100%; }
+  .page-section {
+    padding: 1rem 0;
+    overflow: hidden; }
+  .pack img {
+    width: 18rem;
+    height: 18rem; } }
 
 .mainContact {
   display: grid;
@@ -393,7 +403,7 @@ article h3 {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Manjari", sans-serif; }
+  font-family: "Montserrat"; }
 
 .align, h1, h2, h3 {
   text-align: center; }
@@ -403,17 +413,19 @@ h1 {
   font-size: 50px; }
 
 h2 {
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  font-size: 1.7rem; }
 
 h3 {
   font-weight: bold;
   line-height: 30px;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  font-size: 1.5rem; }
 
 p {
   text-align: justify;
   padding: 0% 5%;
-  font-size: 22px; }
+  font-size: 20px; }
 
 .button {
   grid-area: button;

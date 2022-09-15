@@ -12,8 +12,7 @@ $estlioGeneral:(
 	margen: 0px,
 	padding: 0px,
 	boxSizing: border-box,
-	fuente: ('Manjari', sans-serif)
-	
+	fuente: ('Montserrat')	
 );
 * {
 	margin: map-get($estlioGeneral, margen);
@@ -34,17 +33,19 @@ h1 {
 h2 {
 	@extend .align;
 	margin-bottom: 2%;
+	font-size: 1.7rem;
 }
 h3 {
 	@extend .align;
 	font-weight: bold;
 	line-height: 30px;
 	margin-bottom: 2%;
+	font-size: 1.5rem;
 }
 p {
 	text-align: justify;
 	padding: 0% 5%;
-	font-size: 22px;
+	font-size: 20px;
 }
 .button {
 	grid-area: button;
