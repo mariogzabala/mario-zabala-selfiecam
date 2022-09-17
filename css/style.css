@@ -222,7 +222,7 @@ footer {
     flex-direction: column;
     padding: 0%; }
     .descriptionAbout p {
-      text-align: center; } }
+      text-align: left; } }
 
 .mainService {
   display: grid;
@@ -408,6 +408,11 @@ footer {
 .align, h1, h2, h3 {
   text-align: center; }
 
+.colorHover, .button:hover, .whatsapp:hover {
+  transform: scale(1.1);
+  transition: all .25s;
+  background-color: blue; }
+
 h1 {
   padding: 3% 0% 2% 0%;
   font-size: 50px; }
@@ -423,7 +428,7 @@ h3 {
   font-size: 1.5rem; }
 
 p {
-  text-align: justify;
+  text-align: left;
   padding: 0% 5%;
   font-size: 20px; }
 
@@ -438,9 +443,9 @@ p {
   color: white;
   padding: 1.5% 0%;
   font-size: 18px; }
-  .button:hover {
-    transform: scale(1.1);
-    transition: all .25s; }
+
+a:hover {
+  color: white; }
 
 .whatsapp {
   position: fixed;
