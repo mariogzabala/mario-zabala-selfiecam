@@ -25,11 +25,7 @@ $estlioGeneral:(
 .align{
 	text-align:center
 }
-.colorHover{
-	transform: scale(1.1);
-	transition: all .25s;
-	background-color: blue;
-}
+
 h1 {	
 	@extend .align;
 	padding: 3% 0% 2% 0%;
@@ -52,7 +48,11 @@ p {
 	padding: 0% 5%;
 	font-size: 20px;
 }
-
+.buttonHover {
+	transform: scale(1.1);
+	transition: all .25s;
+	background-color: $buttonHover;
+}
 .button {
 	grid-area: button;
 	display: flex;
@@ -65,7 +65,7 @@ p {
 	padding: 1.5% 0%;
 	font-size: 18px;
 	&:hover {
-		@extend .colorHover;	
+		@extend .buttonHover;	
 	}
 }
 a:hover {
@@ -84,13 +84,12 @@ a:hover {
 	font-size:40px;
 	z-index:100;
 	&:hover {
-		@extend .colorHover;
+		@extend .buttonHover;
 	}
 }
 .whatsapp-icon {
 	margin-top:14px;
 }
-
 
 @media (max-width: 768px) {
 	h1 {

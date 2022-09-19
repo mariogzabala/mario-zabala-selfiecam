@@ -4,7 +4,6 @@
 	grid-template-rows: repeat(6/auto);
 	grid-template-areas: "header header" "encabezadoAbout encabezadoAbout" "imgAbout textoAbout" "descriptionAbout videoAbout" "button button" "footer footer";
 	width: 100%;
-	padding-left: 5%;
 	overflow: hidden;
 }
 .encabezadoAbout {
@@ -16,6 +15,14 @@
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		transition: transform .8s ease;	
+	}
 }
 .textoAbout {
 	grid-area: textoAbout;
@@ -65,7 +72,7 @@
 		flex-direction: column;
 		padding: 0%;
 		p {
-			text-align: left;
+			text-align: center;
 		}
 	}
 }

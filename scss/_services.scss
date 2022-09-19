@@ -16,7 +16,16 @@
 	grid-area: imgEspejoService;
 	width: 100%;
 	padding: 10% 0% 0% 10%;
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		transition: transform .8s ease;
+	}
 }
+
 .textoEspejoService {
 	grid-area: textoEspejoService;
 	width: 100%;
@@ -26,6 +35,14 @@
 	grid-area: imgTotemService;
 	width: 100%;
 	padding: 7% 0% 0% 10%;
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		transition: transform .8s ease;
+	}
 }
 .textoTotemService {
 	grid-area: textoTotemService;
@@ -36,12 +53,21 @@
 	grid-area: img360Service;
 	width: 100%;
 	padding: 7% 0% 5% 10%;
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		transition: transform .8s ease;	
+	}
 }
 .texto360Service {
 	grid-area: texto360Service;
 	width: 100%;
 	padding: 7% 5% 5% 0%;
 }
+
 
 @media (max-width: 768px) {	
 	.mainService {
