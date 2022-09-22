@@ -34,12 +34,12 @@
 .descriptionAbout {
 	grid-area: descriptionAbout;
 	width: 100%;
-	padding: 20% 0% 8% 8%;
+	padding: 20% 0% 0% 8%;
 }
 .videoAbout {
 	grid-area: videoAbout;
 	width: 100%;
-	padding-bottom: 8%;
+	
 }
 
 @media (max-width: 768px) {
@@ -58,6 +58,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		margin-bottom: 10%;
 	}
 	.textoAbout {
 		width: 100%;
