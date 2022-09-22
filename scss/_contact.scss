@@ -2,16 +2,19 @@
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: repeat(3/auto);
-	grid-template-areas: "encabezadoContact" "contactForm" "button";
+	grid-template-areas: "encabezadoContact" "contactForm " "button";
 }
-.contactForm {
-	text-align: center;
-	padding-top: 3%;
-	background-color: $contactFormColor;
-	border-bottom: 20px solid $contactFormColor;
+.contactForm {	
+	padding: 6% 10%;
+	background-image: url("../assets/img/img-contact.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 3%;
 }
 .form {
-	width: 50%;
+	width: 40%;
 	padding: 15px;
 	background: $formColor;
 	border: 1px solid $borderFormColor;
@@ -20,16 +23,36 @@
 }
 .textarea {
 	height: 200px;
-	width: 50%;
+	width: 40%;
+}
+.buttonContact {
+	grid-area: button;
+	margin-right: 10%;
+	justify-content: center;
+	width: 20%;
+	background-color: $buttonColor;
+	border: none;
+	color: $aColor;
+	padding: 1.5% 0%;
+	font-size: 18px;
+	&:hover {
+		@extend .buttonHover;	
+	}
 }
 
 @media (max-width: 768px) {	
 	.contactForm {
 	width: 100%;
+	align-items: center;
 	}
 	.form {
 		width: 90%;
 	}
+	.buttonContact {
+    margin: 10% 0% 10% 0%;
+    width: 48%;
+	font-size: 18px;
+}
 }
 
 

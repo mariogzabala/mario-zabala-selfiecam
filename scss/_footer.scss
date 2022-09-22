@@ -23,11 +23,10 @@ footer {
 	background-color: $footerColor;
 	width: 100%;
 	text-align: left;
-	padding: 3% 5%;
+	padding: 2% 5%;
 	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 2%;
 	
 	.fa-square-facebook {
 		@include footerIcons($fb)	
@@ -48,8 +47,9 @@ footer {
 .copyright {
 	p {
 		color: $copyrightColor;
-		font-size: 18px;
+		font-size: 15px;
 		padding: 0%;
+		line-height: 1%;
 	}
 }
 
