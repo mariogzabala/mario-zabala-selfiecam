@@ -459,7 +459,8 @@ footer {
 
 h1 {
   padding: 3% 0% 2% 0%;
-  font-size: 50px; }
+  font-size: 50px;
+  font-weight: 1100; }
 
 h2 {
   margin-bottom: 2%;
