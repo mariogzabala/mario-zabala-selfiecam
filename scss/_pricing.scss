@@ -1,0 +1,13 @@
+.mainPricing {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3/auto);
+	grid-template-areas: "encabezadoPricing" "selectPricing" "button";
+}
+.selectPricing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3%;
+}
+

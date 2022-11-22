@@ -365,6 +365,18 @@ footer {
     width: 100%;
     height: 100%; } }
 
+.mainPricing {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3/auto);
+  grid-template-areas: "encabezadoPricing" "selectPricing" "button"; }
+
+.selectPricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%; }
+
 .mainContact {
   display: grid;
   grid-template-columns: 100%;
