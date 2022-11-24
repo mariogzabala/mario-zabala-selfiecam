@@ -116,7 +116,7 @@ selectServicio.addEventListener("change", () => {
 });
 
 selectFecha.addEventListener("change", () => {
-  let option = selectFecha.inputSearch.date
+  let option = selectFecha.inputSearch.value
   return (option)
 });
 
