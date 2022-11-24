@@ -60,6 +60,9 @@
             <option value="Default">Seleccionar</option>
             </select>
             <br>
+            <label>Fecha del evento?</label>
+            <input type="date" id="fecha" name="fecha" value="2022-07-22" min="2022-01-01" max="2035-12-31">
+            <br>
             <p id="mensaje"></p>
         </div>
             <button type="submit" id="EnvioSolicitud" class="button">Solicitar Presupuesto!</button>        
@@ -73,5 +76,6 @@
         });
     </script>
     <script src="../js/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

@@ -375,7 +375,16 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3%; }
+  margin-top: 3%;
+  width: 100%; }
+
+select {
+  width: 30%;
+  height: 40px;
+  text-align: left; }
+
+#mensaje {
+  margin-top: 2%; }
 
 .mainContact {
   display: grid;

@@ -25,6 +25,8 @@ const servicios = [
 const selectUbicacion = document.querySelector('select[name="ubicacion"]');
 const selectEvento = document.querySelector('select[name="evento"]');
 const selectServicio = document.querySelector('select[name="servicio"]');
+const selectFecha = document.querySelector('input[name="fecha"]');
+
 
 
 //DOM
@@ -41,12 +43,10 @@ selectUbicacion.addEventListener("change", () => {
     repetir = false;
   } else if (option == "Interior") {
     km = parseInt(
-      prompt(
-        "Ingresa los kilómetros que hay desde tu localidad hasta Córdoba Capital"
-      )
+      prompt("Ingresa los kilómetros que hay desde tu localidad hasta Córdoba Capital:")
     );
     if (km > cobertura) {
-      alert("No llegamos hasta esa localidad. Gracias por tu consulta");
+      swal("Lo sentimos!","...No llegamos hasta tu Localidad!");
       repetir = false;
       continuar = false;
     } else {
@@ -115,6 +115,11 @@ selectServicio.addEventListener("change", () => {
   }
 });
 
+selectFecha.addEventListener("change", () => {
+  let option = selectFecha.inputSearch.date
+  return (option)
+});
+
 
 // JSON
 document.querySelector('#EnvioSolicitud').addEventListener('click', guardarSolicitud);
@@ -124,20 +129,22 @@ function guardarSolicitud(event){
     let sUbicacion = selectUbicacion.value
     let sEvento = selectEvento.value
     let sServicio = selectServicio.value
+    let sFecha = selectFecha.value
         
 
-addPedido(sUbicacion,sEvento,sServicio);
+addPedido(sUbicacion,sEvento,sServicio,sFecha);
 }
 
 //STORAGE
 let Solicitud = [];
 
-function addPedido(pubicacion,pevento,pservicio) {
+function addPedido(pubicacion,pevento,pservicio,pfecha) {
 
 let nuevaSolicitud = {
     lugar: pubicacion,
     evento: pevento,
     servicio: pservicio,
+    fecha: pfecha
 };
   console.log(nuevaSolicitud);
   Solicitud.push(nuevaSolicitud);
