@@ -36,6 +36,7 @@ ubicacion.forEach((lugar) => {
   option.innerText = lugar;
   selectUbicacion.appendChild(option);
 });
+
 selectUbicacion.addEventListener("change", () => {
   let option = selectUbicacion.options[selectUbicacion.selectedIndex].value;
   while(repetir){
@@ -115,7 +116,7 @@ selectServicio.addEventListener("change", () => {
   }
 });
 
-selectFecha.addEventListener("change", () => {
+selectFecha.addEventListener("select", () => {
   let option = selectFecha.inputSearch.value
   return (option)
 });
@@ -261,29 +262,29 @@ function LSSolicitud(plist){
 // }
 
 // // Array con objeto //
-// const opciones = [
-//   {
-//     id: 1,
-//     nombre: "Espejo Mágico",
-//     duracion: "2hs",
-//     formato: "Foto 15x21",
-//     costo: "$" + espejo,
-//   },
-//   {
-//     id: 2,
-//     nombre: "Tótem Fotográfico",
-//     duracion: "2hs",
-//     formato: 'Foto 15x21',
-//     costo: "$" + totem,
-//   },
-//   {
-//     id: 3,
-//     nombre: "Base 360",
-//     duracion: "1:30hs",
-//     formato: "Video + Foto 15x21",
-//     costo: "$" + base,
-//   },
-// ];
+const opciones = [
+  {
+    id: 1,
+    nombre: "Espejo Mágico",
+    duracion: "2hs",
+    formato: "Foto 15x21",
+    costo: "$" + espejo,
+  },
+  {
+    id: 2,
+    nombre: "Tótem Fotográfico",
+    duracion: "2hs",
+    formato: 'Foto 15x21',
+    costo: "$" + totem,
+  },
+  {
+    id: 3,
+    nombre: "Base 360",
+    duracion: "1:30hs",
+    formato: "Video + Foto 15x21",
+    costo: "$" + base,
+  },
+];
 
 // // metodo de busqueda con FIND
 // let servicioBuscado = "Espejo Mágico"
