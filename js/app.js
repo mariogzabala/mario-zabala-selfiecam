@@ -2,9 +2,13 @@ const espejo = 35000;
 const totem = 30000;
 const base = 45000;
 const cobertura = 50;
+const dosHs = 0;
+const tresHs = 9000;
+const cuatroHs = 18000  
 let continuar = true;
 let repetir = true;
 const mensaje= document.querySelector("#mensaje")
+const DateTime = luxon.DateTime;
 
 const ubicacion = [
   "Córdoba Capital", 
@@ -22,10 +26,16 @@ const servicios = [
   "Totem Fotográfico", 
   "Base 360"
 ];
+const tiempo = [
+  "2hs", 
+  "3hs", 
+  "4hs",
+];
 const selectUbicacion = document.querySelector('select[name="ubicacion"]');
 const selectEvento = document.querySelector('select[name="evento"]');
 const selectServicio = document.querySelector('select[name="servicio"]');
 const selectFecha = document.querySelector('input[name="fecha"]');
+const selectTiempo = document.querySelector('select[name="tiempo"]');
 
 
 
@@ -97,17 +107,17 @@ selectServicio.addEventListener("change", () => {
   switch (option) {
     case servicios[0]:
       document.getElementById('EnvioSolicitud').onclick = function(){
-        mensaje.innerHTML= `<h3>El costo del servicio por 2hs. del ${option} es de $${espejo}</h3>`
+        mensaje.innerHTML= `<h3>El costo del servicio de ${option} es de $${espejo }</h3>`
       };
       break;
     case servicios[1]:
       document.getElementById('EnvioSolicitud').onclick = function(){
-      mensaje.innerHTML= `<h3>El costo del servicio por 2hs. del ${option} es de $${totem}</h3>`
+      mensaje.innerHTML= `<h3>El costo del servicio de ${option} es de $${totem}</h3>`
       };
       break;
     case servicios[2]:
       document.getElementById('EnvioSolicitud').onclick = function(){
-      mensaje.innerHTML= `<h3>El costo del servicio por 2hs. de la ${option} es de $${base}</h3>`
+      mensaje.innerHTML= `<h3>El costo del servicio de la ${option} es de $${base}</h3>`
       };
       break;
     default:
@@ -116,10 +126,41 @@ selectServicio.addEventListener("change", () => {
   }
 });
 
+//LUXON
 selectFecha.addEventListener("select", () => {
-  let option = selectFecha.inputSearch.value
-  return (option)
+  let fecha = document.querySelector('input[type="date"]');
+  let min = DateTime.now().toFormat("yyyy-MM-dd")
+  let max = DateTime.now().plus({months: 12}).toFormat("yyyy-MM-dd")
+  
+  fecha.forEach(el=>{
+    el.setAtribute('min', min)
+    el.setAtribute('max', max)  
+  });
+  return (fecha)
 });
+
+tiempo.forEach((horas) => {
+  let duracion = document.createElement("option");
+  duracion.value = horas;
+  duracion.innerText = horas;
+  selectTiempo.appendChild(duracion);
+});
+
+selectTiempo.addEventListener("change", ()=>{
+  let duracion = selectTiempo.options[selectTiempo.selectedIndex].value;
+  switch(duracion){
+    case tiempo[0]:   
+      break;
+    case tiempo[1]:
+      break;
+    case tiempo[2]:
+      break;
+    default:
+      alert("Ingresa una opcion valida");
+      break;
+  }
+
+})
 
 
 // JSON
@@ -131,21 +172,23 @@ function guardarSolicitud(event){
     let sEvento = selectEvento.value
     let sServicio = selectServicio.value
     let sFecha = selectFecha.value
+    let sTiempo = selectTiempo.value
         
 
-addPedido(sUbicacion,sEvento,sServicio,sFecha);
+addPedido(sUbicacion,sEvento,sServicio,sFecha,sTiempo);
 }
 
 //STORAGE
 let Solicitud = [];
 
-function addPedido(pubicacion,pevento,pservicio,pfecha) {
+function addPedido(pubicacion,pevento,pservicio,pfecha,ptiempo) {
 
 let nuevaSolicitud = {
     lugar: pubicacion,
     evento: pevento,
     servicio: pservicio,
-    fecha: pfecha
+    fecha: pfecha,
+    tiempo: ptiempo,
 };
   console.log(nuevaSolicitud);
   Solicitud.push(nuevaSolicitud);
@@ -165,6 +208,12 @@ function getSolicitud(){
 function LSSolicitud(plist){
   localStorage.setItem('localSolicitud', JSON.stringify(plist));
 }
+
+fetch("/data/datos.json")
+.then(res=>res.json())
+.then(data=>{
+  console.log(data);
+})
 
 
 
@@ -262,29 +311,29 @@ function LSSolicitud(plist){
 // }
 
 // // Array con objeto //
-const opciones = [
-  {
-    id: 1,
-    nombre: "Espejo Mágico",
-    duracion: "2hs",
-    formato: "Foto 15x21",
-    costo: "$" + espejo,
-  },
-  {
-    id: 2,
-    nombre: "Tótem Fotográfico",
-    duracion: "2hs",
-    formato: 'Foto 15x21',
-    costo: "$" + totem,
-  },
-  {
-    id: 3,
-    nombre: "Base 360",
-    duracion: "1:30hs",
-    formato: "Video + Foto 15x21",
-    costo: "$" + base,
-  },
-];
+// const opciones = [
+//   {
+//     id: 1,
+//     nombre: "Espejo Mágico",
+//     duracion: "2hs",
+//     formato: "Foto 15x21",
+//     costo: 35000,
+//   },
+//   {
+//     id: 2,
+//     nombre: "Tótem Fotográfico",
+//     duracion: "2hs",
+//     formato: 'Foto 15x21',
+//     costo: 30000,
+//   },
+//   {
+//     id: 3,
+//     nombre: "Base 360",
+//     duracion: "1:30hs",
+//     formato: "Video + Foto 15x21",
+//     costo: 50000,
+//   }
+// ]
 
 // // metodo de busqueda con FIND
 // let servicioBuscado = "Espejo Mágico"

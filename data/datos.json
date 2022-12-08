@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Espejo Mágico",
+        "duracion": "2hs",
+        "formato": "Foto 15x21",
+        "costo": "35000"
+    },
+    {
+        "id": 2,
+        "nombre": "Totem Fotografico",
+        "duracion": "2hs",
+        "formato": "Foto 15x21",
+        "costo": "30000"   
+    },
+    {
+        "id": 1,
+        "nombre": "Base 360",
+        "duracion": "2hs",
+        "formato": "Foto 15x21",
+        "costo": "50000"
+    }
+]

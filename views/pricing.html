@@ -47,22 +47,26 @@
         <div class="selectPricing">
             <label>Dónde se llevará a cabo el evento?</label>
             <select name="ubicacion" id="ubicacion">
-            <option value="Default">Seleccionar</option>
+                <option value="Default">Seleccionar</option>
             </select>
             <br>
             <label>Que tipo de evento estas planenado?</label>
             <select name="evento" id="evento">
-            <option value="Default">Seleccionar</option>
+                <option value="Default">Seleccionar</option>
             </select>
             <br>
             <label>Que servicio te interesa?</label>
             <select name="servicio" id="servicio">
-            <option value="Default">Seleccionar</option>
+                <option value="Default">Seleccionar</option>
             </select>
             <br>
             <label>Fecha del evento?</label>
-            <input type="date" id="fecha" name="fecha" value="2022-07-22" min="2022-01-01" max="2035-12-31">
+            <input type="date" id="fecha" name="fecha" value="" min="" max="">
             <br>
+            <label>Cuántas horas de servicio necesitas?</label>
+            <select name="tiempo" id="tiempo">
+                <option value="Default">Seleccionar</option>
+            </select>
             <p id="mensaje"></p>
         </div>
             <button type="submit" id="EnvioSolicitud" class="button">Solicitar Presupuesto!</button>        
@@ -75,7 +79,8 @@
             duration: 2000
         });
     </script>
-    <script src="../js/app.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.1/build/global/luxon.min.js"></script>
+    <script src="../js/app.js"></script>    
 </body>
 </html>
