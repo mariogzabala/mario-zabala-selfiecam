@@ -209,7 +209,7 @@ function LSSolicitud(plist){
   localStorage.setItem('localSolicitud', JSON.stringify(plist));
 }
 
-fetch("/data/datos.json")
+fetch("./data/datos.json")
 .then(res=>res.json())
 .then(data=>{
   console.log(data);
